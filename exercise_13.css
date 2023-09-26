@@ -49,14 +49,14 @@
 .gmail-border {
     box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    display: inline-block;
     margin-bottom: 40px;
+    width: 390px;
+    padding-bottom: 10px;
 }
 
 .all-inboxes-div {
     padding-top: 10px;
     padding-left: 10px;
-    margin-bottom: 15px;
 }
 
 .all-inboxes {
@@ -71,7 +71,7 @@
     display: flex;
     align-items: center;
     column-gap: 10px;
-    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 .pro-pic-div {
@@ -85,14 +85,10 @@
     border-radius: 22.5px;
 }
 
-.info-div {
-    margin-right: 10px;
-}
-
 .flex-box2 {
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    width: 310px;
 }
 
 .title,
@@ -127,7 +123,7 @@
 .post {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    display: inline-block;
+    width: 450px;
 }
 
 .flexbox-1 {
