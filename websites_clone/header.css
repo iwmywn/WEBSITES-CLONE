@@ -1,0 +1,132 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: white;
+    z-index: 5;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-icon,
+.upload-icon,
+.youtube-app-icon,
+.noti-icon,
+.search-icon,
+.voice-search-icon {
+    width: 24px;
+}
+
+.hamburger-icon {
+    margin-left: 27px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.youtube-logo {
+    height: 20px;
+    cursor: pointer;
+}
+
+.mid {
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+    flex: 1;
+}
+
+.type-search {
+    flex: 1;
+    padding-left: 15px;
+    height: 36px;
+    border: 1px solid rgb(200, 200, 200);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: inset 0px 0px 0.5px rgba(0, 0, 0, 0.3);
+    width: 0;
+    max-width: 510px;
+}
+
+.type-search::placeholder {
+    font-size: 16px;
+    color: rgb(136, 136, 136);
+}
+
+.search-box {
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: inset 0px 0px 0.5px rgba(0, 0, 0, 0.3);
+    margin-left: -1px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 40px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(246, 246, 246);
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.search-box:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.voice-box {
+    height: 40px;
+    display: flex;
+    margin-left: 15px;
+    background-color: rgb(240, 240, 240);
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.voice-box:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-right: 16px;
+    flex-shrink: 0;
+    margin-left: 60px;
+    align-items: center;
+}
+
+.right button {
+    height: 40px;
+    display: flex;
+    background-color: white;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.right button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.channel-avatar {
+    height: 36px;
+    border-radius: 18px;
+    cursor: pointer;
+}
