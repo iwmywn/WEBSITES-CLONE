@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube Clone</title>
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="header.css">
@@ -14,29 +16,39 @@
   <body>
     <header>
       <div class="left">
-        <img src="/websites_clone/youtube-icons/hamburger-menu.svg" class="hamburger-icon">
-        <a href="https://www.youtube.com/" target="_blank">
-          <img src="/websites_clone/youtube-icons/youtube-logo.svg" class="youtube-logo">
-        </a>
+        <button>
+          <img src="/websites_clone/youtube-icons/hamburger-menu.svg" class="hamburger-icon">
+        </button>
+        <div class="youtube-logo-box">
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="/websites_clone/youtube-icons/youtube-logo.svg" class="youtube-logo">
+          </a>
+          <div class="country">AU</div>
+        </div>
       </div>
       <div class="mid">
         <input type="text" placeholder="Search" class="type-search">
         <button class="search-box">
           <img src="/websites_clone/youtube-icons/search.svg" class="search-icon">
+          <div class="tooltip">Search</div>
         </button>
         <button class="voice-box">
           <img src="/websites_clone/youtube-icons/voice-search-icon.svg" class="voice-search-icon">
+          <div class="tooltip">Search with your voice</div>
         </button>
       </div>
       <div class="right">
-        <button>
+        <button class="upload-box">
           <img src="/websites_clone/youtube-icons/upload.svg" class="upload-icon">
+          <div class="tooltip">Create</div>
         </button>
-        <button>
+        <button class="youtube-app-box">
           <img src="/websites_clone/youtube-icons/youtube-apps.svg" class="youtube-app-icon">
+          <div class="tooltip">YouTube apps</div>
         </button>
-        <button>
+        <button class="noti-box">
           <img src="/websites_clone/youtube-icons/notifications.svg" class="noti-icon">
+          <div class="tooltip">Notifications</div>
         </button>
         <img src="/pics/channel-pic.jpg" class="channel-avatar">
       </div>
