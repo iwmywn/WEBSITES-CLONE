@@ -49,21 +49,28 @@ header {
 
 .mid {
     display: flex;
-    justify-content: center;
+    align-items: center;
     margin-left: 60px;
     flex: 1;
+    max-width: 510px;
 }
 
 .type-search {
     flex: 1;
-    padding-left: 15px;
-    height: 36px;
+    padding-left: 12px;
+    height: 40px;
     border: 1px solid rgb(200, 200, 200);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     box-shadow: inset 0px 0px 0.5px rgba(0, 0, 0, 0.3);
     width: 0;
-    max-width: 510px;
+    box-sizing: border-box;
+    padding: 1px 2px 1px 15px;
+    outline: none;
+}
+
+.type-search:focus {
+    border: 1px solid rgb(28, 98, 185);
 }
 
 .type-search::placeholder {
@@ -74,7 +81,7 @@ header {
 .search-box {
     border: 1px solid rgb(200, 200, 200);
     box-shadow: inset 0px 0px 0.5px rgba(0, 0, 0, 0.3);
-    margin-left: -1px;
+    border-left: 0;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     height: 40px;
