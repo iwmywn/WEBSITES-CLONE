@@ -21,7 +21,12 @@ main {
 .tool-box,
 .tool-box2,
 .box-1 span,
-.box-2 span {
+.box-2 span,
+.cap span,
+.user span,
+.like-amount img,
+.like-amount span,
+.older-posts-3 span {
     cursor: pointer;
 }
 
@@ -162,6 +167,16 @@ main {
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.like-amount img {
+    width: 14px;
+    height: 14px;
+    object-fit: cover;
+    border-radius: 7px;
 }
 
 .cap {
@@ -171,6 +186,10 @@ main {
 
 .cap span {
     font-weight: 500;
+}
+
+.cap p {
+    margin: 0px;
 }
 
 .all-cmt {
@@ -202,12 +221,47 @@ main {
 .add-cmt-box {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .add-cmt {
     font-size: 14px;
     color: rgba(115, 115, 115, 0.8);
+}
+
+.older-posts-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(115, 115, 115, 0.3);
+    /* background-color: lightpink; */
+    padding: 40px 0px 30px 0px;
+}
+
+.checkmark {
+    width: 96px;
+    height: 96px;
+}
+
+.older-posts-1 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.older-posts-2,
+.older-posts-3 {
+    font-size: 14px;
+}
+
+.older-posts-2 {
+    margin-bottom: 10px;
+    color: rgba(115, 115, 115, 0.8);
+}
+
+.older-posts-3 {
+    color: rgb(0, 149, 246);
+    font-weight: 500;
 }
 
 .right-box {
