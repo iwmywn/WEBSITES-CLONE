@@ -55,6 +55,20 @@ main {
     font-size: 15px;
 }
 
+.home-box-2-2 {
+    position: relative;
+}
+
+.home-box-2-2 div {
+    position: absolute;
+    background-color: rgb(29, 155, 240);
+    width: 70px;
+    height: 4px;
+    bottom: 0;
+    border-radius: 9999px;
+    pointer-events: none;
+}
+
 .following-tab {
     font-weight: bold;
 }
