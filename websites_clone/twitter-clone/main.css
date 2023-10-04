@@ -1,0 +1,182 @@
+main {
+    margin-left: 383px;
+    display: flex;
+}
+
+.home-box-2 div,
+.status-box-1 img,
+.option {
+    cursor: pointer;
+}
+
+.home-box {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.97);
+    z-index: 1;
+}
+
+.home-box-1,
+.home-box-2 {
+    height: 50px;
+}
+
+.home-box-1 {
+    padding: 16px 0px 0px 16px;
+    box-sizing: border-box;
+}
+
+.home-box-1 span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home-box-2 {
+    display: flex;
+}
+
+.home-box-2 div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.home-box-2 div:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.home-box-2 span {
+    font-size: 15px;
+}
+
+.following-tab {
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 92px;
+    border-right: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.new-feeds {
+    width: 600px;
+    padding: 16px 16px 10px 16px;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.status-box {
+    display: flex;
+    column-gap: 12px;
+}
+
+.status-box-1 {
+    width: 40px;
+}
+
+.status-box-1 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+    transition: background-color 0.2s;
+}
+
+.status-box img:hover {
+
+}
+
+.status-box-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.status-box-2-1 {
+    padding-top: 7px;
+}
+
+.status-box-2-1 p {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+.status-box-2-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options-box {
+    display: flex;
+}
+
+.option {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 9999px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.option:hover .tooltip {
+    opacity: 1;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -25px;
+    background-color: rgb(102, 102, 102);
+    padding: 2px 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.tooltip span {
+    font-size: 10px;
+    color: white;
+}
+
+.option:hover {
+    background-color: rgb(232, 245, 253);
+}
+
+.location {
+    pointer-events: none;
+}
+
+.location img {
+    opacity: 0.5;
+}
+
+.status-box-2-2 img {
+    width: 20px;
+    height: 20px;
+}
+
+.status-box-2-2 button {
+    padding: 10px 20px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 9999px;
+    background-color: rgb(29, 155, 240);
+    color: white;
+    font-weight: bold;
+    opacity: 0.5;
+    font-size: 14px;
+}
