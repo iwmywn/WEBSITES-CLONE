@@ -4,7 +4,7 @@ main {
 }
 
 .home-box-2 div,
-.status-box-1 img,
+.status-box-1 div,
 .option {
     cursor: pointer;
 }
@@ -15,7 +15,7 @@ main {
     top: 0;
     width: 600px;
     background-color: rgba(255, 255, 255, 0.97);
-    z-index: 1;
+    z-index: 5;
 }
 
 .home-box-1,
@@ -79,6 +79,7 @@ section {
 
 .status-box-1 {
     width: 40px;
+    position: relative;
 }
 
 .status-box-1 img {
@@ -88,8 +89,19 @@ section {
     transition: background-color 0.2s;
 }
 
-.status-box img:hover {
+.status-box-1 div {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
+.status-box-1 div:hover {
+    background-color: rgba(26, 26, 26, 0.15);
 }
 
 .status-box-2 {
