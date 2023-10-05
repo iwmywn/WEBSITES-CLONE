@@ -14,7 +14,7 @@ header {
 .logo,
 .icon-box,
 .icon,
-.post,
+.tweet,
 .info-box {
     cursor: pointer;
 }
@@ -63,11 +63,11 @@ header {
     font-weight: bold;
 }
 
-.post-box {
+.tweet-box {
     margin-top: 5px;
 }
 
-.post {
+.tweet {
     height: 50px;
     width: 230px;
     border-radius: 9999px;
@@ -79,7 +79,7 @@ header {
     transition: background-color 0.2s;
 }
 
-.post:hover {
+.tweet:hover {
     background-color: rgb(26, 140, 216);
 }
 
