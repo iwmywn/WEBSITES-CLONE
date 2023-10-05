@@ -108,7 +108,8 @@ section {
     transition: background-color 0.2s;
 }
 
-.status-box-1 div {
+.status-box-1 div,
+.avatar-box div {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -119,7 +120,8 @@ section {
     bottom: 0;
 }
 
-.status-box-1 div:hover {
+.status-box-1 div:hover,
+.avatar-box div:hover {
     background-color: rgba(26, 26, 26, 0.15);
 }
 
@@ -214,7 +216,7 @@ section {
 
 .post-box {
     display: flex;
-    padding: 10px 15px;
+    padding: 15px 15px 7px 15px;
     column-gap: 10px;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
     transition: background-color 0.2s;
@@ -225,7 +227,12 @@ section {
     background-color: rgb(247, 247, 247);
 }
 
-.avatar-txt {
+.avatar-box {
+    width: 40px;
+    position: relative;
+}
+
+.avatar-2 {
     width: 40px;
     height: 40px;
     object-fit: cover;
@@ -236,6 +243,7 @@ section {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    flex: 1;
 }
 
 .post-box-2-1 {
@@ -247,6 +255,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 25px;
 }
 
 .post-box-2-1 span {
@@ -291,6 +300,60 @@ section {
 .post-box-2-1-2 img {
     width: 18px;
     height: 18px;
+}
+
+.hashtag {
+    color: rgb(29, 155, 240);
+}
+
+.hashtag:hover {
+    text-decoration: underline;
+}
+
+.post-box-2-1-3 {
+    padding-top: 2px;
+    position: relative;
+}
+
+.post-box-2-1-3 a {
+    text-decoration: none;
+}
+
+.link-1 {
+    color: rgb(29, 155, 240);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 230px;
+    display: inline-block;
+}
+
+.link-1:hover {
+    text-decoration: underline;
+}
+
+.tooltip-3 {
+    position: absolute;
+    background-color: rgb(102, 102, 102);
+    left: -30px;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.2s;
+    transition-delay: 0.3s;
+}
+
+.post-box-2-1-3:hover .tooltip-3 {
+    opacity: 1;
+}
+
+.tooltip-3 span {
+    font-size: 11px;
+    color: white;
 }
 
 .post-box-2-2 {
