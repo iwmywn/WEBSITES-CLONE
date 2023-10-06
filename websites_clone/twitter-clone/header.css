@@ -132,7 +132,7 @@ header {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 140px;
+    max-width: 130px;
     font-weight: bold;
 }
 
