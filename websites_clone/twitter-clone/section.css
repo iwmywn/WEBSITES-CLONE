@@ -1,6 +1,7 @@
 main {
     margin-left: 383px;
     display: flex;
+    column-gap: 30px;
 }
 
 .home-box-2 div,
@@ -9,7 +10,7 @@ main {
 .post-icon,
 .icon-1,
 .post-box,
-.info-more-box-1 button {
+.more-info-box-1 button {
     cursor: pointer;
 }
 
@@ -257,14 +258,14 @@ section {
     border-radius: 4px;
 }
 
-.avatar-box-1:hover .info-more-box,
-.author-box-1:hover .info-more-box,
-.author-box-2:hover .info-more-box {
+.avatar-box-1:hover .more-info-box,
+.author-box-1:hover .more-info-box,
+.author-box-2:hover .more-info-box {
     opacity: 1;
-    pointer-events: visible;
+    pointer-events: auto;
 }
 
-.info-more-box {
+.more-info-box {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -282,71 +283,71 @@ section {
     box-sizing: border-box;
 }
 
-.info-more-boxx-1 {
+.more-info-boxx-1 {
     left: -130px;
     bottom: -265px;
 }
 
-.info-more-boxx-2 {
+.more-info-boxx-2 {
     left: -80px;
     bottom: -265px;
 }
 
-.info-more-boxx-3 {
+.more-info-boxx-3 {
     left: -130px;
     bottom: -280px;
 }
 
-.info-more-boxx-4 {
+.more-info-boxx-4 {
     left: -80px;
     bottom: -280px;
 }
 
-.info-more-boxx-5 {
+.more-info-boxx-5 {
     left: -130px;
     bottom: -215px;
 }
 
-.info-more-boxx-6 {
+.more-info-boxx-6 {
     left: -100px;
     bottom: -210px;
 }
 
-.info-more-boxx-7 {
+.more-info-boxx-7 {
     left: -130px;
     bottom: -245px;
 }
 
-.info-more-boxx-8 {
+.more-info-boxx-8 {
     left: -100px;
     bottom: -260px;
 }
 
-.info-more-boxx-9 {
+.more-info-boxx-9 {
     left: -130px;
     bottom: -245px;
 }
 
-.info-more-boxx-10 {
+.more-info-boxx-10 {
     left: -100px;
     bottom: -245px;
 }
 
-.info-more-boxx-11 {
+.more-info-boxx-11 {
     left: -130px;
     bottom: -270px;
 }
 
-.info-more-boxx-12 {
+.more-info-boxx-12 {
     left: -110px;
     bottom: -265px;
 }
 
-.info-more-box div {
+.more-info-box div {
     pointer-events: unset;
 }
 
-.info-more-box-1 {
+.more-info-box-1 {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -369,7 +370,7 @@ section {
     border-radius: 4px;
 }
 
-.info-more-box-1 img {
+.more-info-box-1 img {
     width: 64px;
     height: 64px;
     object-fit: cover;
@@ -380,7 +381,7 @@ section {
     border-radius: 4px;
 }
 
-.info-more-box-1-1 {
+.more-info-box-1-1 {
     background-color: white;
     padding: 9px 15px;
     border-radius: 9999px;
@@ -393,11 +394,11 @@ section {
     box-sizing: border-box;
 }
 
-.info-more-box-1-1:hover {
+.more-info-box-1-1:hover {
     border: none;
 }
 
-.info-more-box-1-1:hover .tooltip-5 {
+.more-info-box-1-1:hover .tooltip-5 {
     opacity: 1;
 }
 
@@ -423,51 +424,51 @@ section {
     color: rgb(244, 33, 46);
 }
 
-.info-more-box-2 {
+.more-info-box-2 {
     display: flex;
     flex-direction: column;
 }
 
-.info-more-box-2-1 {
+.more-info-box-2-1 {
     display: flex;
     align-items: center;
     column-gap: 3px;
 }
 
-.info-more-box-2-1:hover span {
+.more-info-box-2-1:hover span {
     text-decoration: underline;
 }
 
-.info-more-box-2-1 span {
+.more-info-box-2-1 span {
     font-size: 17px;
     font-weight: bold;
 }
 
-.info-more-box-2-1 img {
+.more-info-box-2-1 img {
     width: 20px;
     height: 20px;
 }
 
-.info-more-box-2-2 span {
+.more-info-box-2-2 span {
     font-size: 15px;
     color: rgb(102, 102, 102);
 }
 
-.info-more-box-3 span {
+.more-info-box-3 span {
     font-size: 15px;
 }
 
-.info-more-box-4 {
+.more-info-box-4 {
     display: flex;
     align-items: center;
     column-gap: 20px;
 }
 
-.info-more-box-4 span {
+.more-info-box-4 span {
     font-size: 14px;
 }
 
-.info-more-box-4 span:hover {
+.more-info-box-4 span:hover {
     text-decoration: underline;
 }
 
@@ -476,27 +477,27 @@ section {
     font-size: 15px;
 }
 
-.info-more-box-5 {
+.more-info-box-5 {
     display: flex;
     column-gap: 10px;
 }
 
-.info-more-box-5 img {
+.more-info-box-5 img {
     width: 18px;
     height: 18px;
     border-radius: 9999px;
 }
 
-.info-more-box-5 span {
+.more-info-box-5 span {
     font-size: 13px;
     color: rgb(102, 102, 102);
 }
 
-.info-more-box-5 div {
+.more-info-box-5 div {
     display: flex;
 }
 
-.info-more-box-5-1 {
+.more-info-box-5-1 {
     padding-top: 3px;
     position: relative;
 }
@@ -506,11 +507,11 @@ section {
     left: -40%;
 }
 
-.info-more-box-5-2 {
+.more-info-box-5-2 {
     flex: 1;
 }
 
-.info-more-box-5-2:hover span {
+.more-info-box-5-2:hover span {
     text-decoration: underline;
 }
 
