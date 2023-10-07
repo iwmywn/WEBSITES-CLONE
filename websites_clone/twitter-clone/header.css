@@ -4,11 +4,11 @@ header {
     justify-content: space-between;
     position: fixed;
     top: 0;
-    left: 125px;
     bottom: 0;
     width: 265px;
     /* background-color: lightblue; */
     border-right: 0.5px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 nav > div:not(div:nth-child(1)),
