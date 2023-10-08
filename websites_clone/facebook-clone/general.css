@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(36, 37, 38);
+    font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+    /* color: red; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

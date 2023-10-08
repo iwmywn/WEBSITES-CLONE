@@ -1,0 +1,166 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    border-bottom: 0.1px solid rgba(115, 115, 115, 0.3);
+}
+
+.left-section > img,
+.mid-section > div,
+.right-section > div {
+    cursor: pointer;
+}
+
+.left-section {
+    column-gap: 7px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 350px;
+}
+
+.left-section > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.left-section > div:first-child img {
+    width: 40px;
+    height: 40px;
+}
+
+.left-section > div:last-child {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 1;
+}
+
+.left-section > div:last-child input {
+    height: 40px;
+    border-radius: 9999px;
+    border: none;
+    padding-left: 40px;
+    font-size: 15px;
+    background-color: rgb(58, 59, 60);
+    color: white;
+    font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+    outline: none;
+    width: 0;
+    flex: 1;
+}
+
+.left-section > div:last-child input::placeholder {
+    color: rgb(176, 179, 184);
+}
+
+.left-section > div:last-child div {
+    position: absolute;
+    left: 12px;
+}
+
+.left-section > div:last-child img {
+    width: 16px;
+    height: 16px;
+}
+
+.mid-section {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    column-gap: 7px;
+}
+
+.mid-section > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 50px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+.mid-section > div img {
+    width: 24px;
+    height: 24px;
+}
+
+.mid-section > div:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.tooltip {
+    position: absolute;
+    opacity: 0;
+    bottom: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 8px;
+    border-radius: 7px;
+    background: rgb(200, 200, 200);
+    transition-delay: 0.5s;
+    pointer-events: none;
+}
+
+.tooltip span {
+    font-size: 12px;
+}
+
+.mid-section > div:hover .tooltip,
+.right-section > div:hover .tooltip {
+    opacity: 1;
+}
+
+.right-section {
+    column-gap: 10px;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    margin-left: 15px;
+}
+
+.right-section > div {
+    position: relative;
+}
+
+.right-section > div:not(:last-child) {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    background-color: rgb(58, 59, 60);
+    transition: background-color 0.2s;
+}
+
+.right-section > div:not(:last-child) img {
+    width: 20px;
+    height: 20px;
+}
+
+.right-section > div:not(:last-child):hover {
+    background-color: rgb(78, 79, 80);
+}
+
+.right-section > div:last-child img {
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+}
+
+.right-section > div .tooltip {
+    bottom: -35px;
+}
+
+.right-section > div:last-child .tooltip {
+    left: -15px;
+}
