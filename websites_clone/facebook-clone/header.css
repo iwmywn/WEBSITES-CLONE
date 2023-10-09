@@ -169,27 +169,32 @@ header {
     left: -15px;
 }
 
-.noti-tooltip {
+.num-mess-noti,
+.num-new-noti {
     position: absolute;
     background-color: rgb(228, 30, 63);
-    padding: 0px 5px;
     border-radius: 9999px;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -4px;
     z-index: 1;
+    top: -4px;
 }
 
-.right-section > div:nth-child(2) .noti-tooltip {
-    right: -4px;
+.right-section > div:nth-child(2) .num-mess-noti {
+    height: 20px;
+    width: 20px;
+    right: -8px;
 }
 
-.right-section > div:nth-child(3) .noti-tooltip {
-    right: -20px;
-}
-
-.noti-tooltip span {
+.num-mess-noti span,
+.num-new-noti span {
     color: white;
     font-size: 13px;
+}
+
+.right-section > div:nth-child(3) .num-new-noti {
+    height: 20px;
+    right: -19px;
+    padding: 0px 5px;
 }
