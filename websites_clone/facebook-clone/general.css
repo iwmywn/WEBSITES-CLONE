@@ -1,7 +1,6 @@
 body {
     background-color: rgb(36, 37, 38);
     font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
-    height: 3000px;
 }
 
 * {
@@ -17,9 +16,16 @@ section {
     width: 1070px;
 }
 
+.container {
+    display: block;
+    background-color: rgb(24, 25, 26);
+    padding-top: 15px;
+}
+
 main {
     display: grid;
-    grid-template-columns: 360px 1fr;
+    grid-template-columns: 400px 1fr;
     width: 1010px;
-    margin: 0px auto;
+    margin: auto;
+    column-gap: 15px;
 }
