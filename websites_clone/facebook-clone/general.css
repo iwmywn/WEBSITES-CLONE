@@ -24,7 +24,7 @@ section {
 
 main {
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: 400px 595px;
     width: 1010px;
     margin: auto;
     column-gap: 15px;
