@@ -1,11 +1,25 @@
 body {
     background-color: rgb(36, 37, 38);
     font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
-    /* color: red; */
+    height: 3000px;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 1070px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    width: 1010px;
+    margin: 0px auto;
 }
