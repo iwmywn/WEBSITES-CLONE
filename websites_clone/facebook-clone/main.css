@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 15px;
-    padding: 10px 15px;
+    padding: 15px 15px;
     background-color: rgb(36, 37, 38);
     border-radius: 10px;
 }
@@ -48,7 +48,7 @@
 .top-info > div:nth-child(13) span {
     color: white;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .top-info > div:nth-child(3):hover,
@@ -57,13 +57,20 @@
     background-color: rgb(78, 79, 80);
 }
 
-.top-info > div:nth-child(4) img {
+.top-info > div:nth-child(4) img,
+.top-info > div:nth-child(5) img,
+.top-info > div:nth-child(6) img,
+.top-info > div:nth-child(7) img,
+.top-info > div:nth-child(8) img,
+.top-info > div:nth-child(9) img,
+.top-info > div:nth-child(10) img {
     width: 20px;
-    height: 20px;
+    height: 19px;
 }
 
 .top-info > div:nth-child(4) {
     column-gap: 10px;
+    align-items: flex-start;
 }
 
 .top-info > div:nth-child(4) p {
@@ -74,7 +81,7 @@
 .top-info > div:nth-child(4) span,
 .top-info > div:nth-child(5) span,
 .top-info > div:nth-child(7) span {
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -84,11 +91,6 @@
 
 .top-info > div:nth-child(5) {
     column-gap: 10px;
-}
-
-.top-info > div:nth-child(5) img {
-    width: 20px;
-    height: 20px;
 }
 
 .top-info > div:nth-child(5) p {
@@ -104,11 +106,6 @@
     column-gap: 10px;
 }
 
-.top-info > div:nth-child(6) img {
-    width: 20px;
-    height: 20px;
-}
-
 .top-info > div:nth-child(6) span {
     color: white;
     font-size: 15px;
@@ -116,11 +113,6 @@
 
 .top-info > div:nth-child(7) {
     column-gap: 10px;
-}
-
-.top-info > div:nth-child(7) img {
-    width: 20px;
-    height: 20px;
 }
 
 .top-info > div:nth-child(7) p {
@@ -137,11 +129,6 @@
     cursor: pointer;
 }
 
-.top-info > div:nth-child(8) img {
-    width: 20px;
-    height: 20px;
-}
-
 .top-info > div:nth-child(8) span,
 .top-info > div:nth-child(9) span {
     color: rgb(90, 167, 255);
@@ -151,11 +138,6 @@
 .top-info > div:nth-child(9) {
     column-gap: 10px;
     cursor: pointer;
-}
-
-.top-info > div:nth-child(9) img {
-    width: 20px;
-    height: 20px;
 }
 
 .top-info > div:nth-child(10) span {
@@ -168,21 +150,60 @@
     column-gap: 10px;
 }
 
-.top-info > div:nth-child(10) img {
-    width: 20px;
-    height: 20px;
-}
-
 .top-info > div:nth-child(8) span:hover,
 .top-info > div:nth-child(9) span:hover,
 .top-info > div:nth-child(10) span:hover {
     text-decoration: underline;
 }
 
-.top-info > div:nth-child(12) img {
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.story img,
+.pic {
     width: 105px;
     height: 190px;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.pic {
+    overflow: hidden;
+    position: relative;
+}
+
+.pic > div:nth-child(2) > span {
+    font-size: 12px;
+    color: white;
+}
+
+.pic > img {
+    transition: transform 0.3s;
+}
+
+.pic > div:nth-child(2) {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    pointer-events: none;
+}
+
+.pic:hover > img {
+    transform: scale(1.02);
+}
+
+.note > span {
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}
+
+.top-info a {
+    text-decoration: none;
 }
 
 .mid-info {
@@ -226,7 +247,7 @@
     background-color: rgb(58, 59, 60);
 }
 
-.bot-info {
+.bottom-info {
     display: flex;
     flex-direction: column;
     background-color: rgb(36, 37, 38);
@@ -234,44 +255,44 @@
     padding: 10px 15px;
 }
 
-.bot-info > div:first-child {
+.bottom-info > div:first-child {
     display: flex;
     justify-content: space-between;
 }
 
-.bot-info > div:first-child div {
+.bottom-info > div:first-child div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.bot-info > div:first-child > div:first-child span {
+.bottom-info > div:first-child > div:first-child span {
     color: white;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
 }
 
-.bot-info > div:first-child > div:first-child span:hover {
+.bottom-info > div:first-child > div:first-child span:hover {
     text-decoration: underline;
 }
 
-.bot-info > div:first-child > div:last-child span {
+.bottom-info > div:first-child > div:last-child span {
     color: rgb(90, 167, 255);
     font-size: 18px;
     cursor: pointer;
 }
 
-.bot-info > div:first-child > div:last-child {
+.bottom-info > div:first-child > div:last-child {
     padding: 3px 6px;
     border-radius: 5px;
 }
 
-.bot-info > div:first-child > div:last-child:hover {
+.bottom-info > div:first-child > div:last-child:hover {
     background-color: rgb(58, 59, 60);
 }
 
-.bot-info > div:nth-child(2) > span {
+.bottom-info > div:nth-child(2) > span {
     color: rgb(176, 179, 184);
     font-size: 15px;
 }
@@ -280,18 +301,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 8px;
-    row-gap: 12px;
-}
-
-.friends img {
-    width: 115px;
-    height: 115px;
-    border-radius: 4px;
-}
-
-.friends span {
-    color: white;
-    font-size: 15px;
+    row-gap: 20px;
 }
 
 ._friends {
@@ -304,6 +314,129 @@
     flex-direction: column;
     row-gap: 5px;
     cursor: pointer;
+    position: relative;
+}
+
+._friends > div > img {
+    width: 115px;
+    height: 115px;
+    border-radius: 4px;
+}
+
+._friends > div > span {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+._friends > div:hover .more-info {
+    opacity: 1;
+}
+
+.more-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    row-gap: 15px;
+    padding: 15px;
+    z-index: 1;
+    background-color: rgb(36, 37, 38);
+    width: 410px;
+    top: 140px;
+    left: -150px;
+    transition: opacity 0.3s;
+}
+
+.top-more-info {
+    display: flex;
+    column-gap: 15px;
+    padding: 0px 15px;
+}
+
+.pro-pic {
+    display: flex;
+}
+
+.pro-pic > img {
+    width: 88px;
+    height: 88px;
+    border-radius: 9999px;
+}
+
+.name-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+}
+
+.name-info > div:first-child > span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.name-info > div:not(:first-child) {
+    display: flex;
+    column-gap: 10px;
+    align-items: flex-start;
+}
+
+.name-info > div:not(:first-child) > img {
+    width: 19px;
+    height: 17px;
+    margin-top: 3px;
+}
+
+.name-info > div:not(:first-child) > p {
+    color: white;
+    font-size: 15px;
+}
+
+.name-info > div:not(:first-child) span {
+    font-weight: 600;
+}
+
+.bottom-more-info {
+    display: flex;
+    column-gap: 7px;
+}
+
+.bottom-more-info > div:not(:last-child) img {
+    width: 16px;
+    height: 16px;
+}
+
+.bottom-more-info span {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bottom-more-info > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    height: 35px;
+    border-radius: 7px;
+}
+
+.bottom-more-info > div:not(:last-child) {
+    flex: 1;
+}
+
+.bottom-more-info > div:nth-child(odd) {
+    background-color: rgb(58, 59, 60);
+    width: 45px;
+}
+
+.bottom-more-info > div:nth-child(2) {
+    background-color: rgb(8, 102, 255);
 }
 
 footer {
@@ -387,7 +520,7 @@ footer > span:nth-child(11):hover {
 
 .header > div:first-child span {
     color: rgba(255, 255, 255, 0.6);
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .tool {
@@ -453,6 +586,7 @@ footer > span:nth-child(11):hover {
 .top-tlv > div span {
     color: white;
     font-size: 15px;
+    font-weight: 500;
 }
 
 .top-tlv > div div {
@@ -470,12 +604,12 @@ footer > span:nth-child(11):hover {
     opacity: 0.8;
 }
 
-.bot-tlv {
+.bottom-tlv {
     display: flex;
     padding: 4px 12px;
 }
 
-.bot-tlv > div {
+.bottom-tlv > div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -485,26 +619,28 @@ footer > span:nth-child(11):hover {
     cursor: pointer;
 }
 
-.bot-tlv img {
+.bottom-tlv img {
     width: 16px;
     height: 14px;
 }
 
-.bot-tlv > div:first-child span {
+.bottom-tlv > div:first-child span {
     color: rgb(8, 102, 255);
     font-size: 15px;
+    font-weight: 500;
 }
 
-.bot-tlv > div:last-child span {
+.bottom-tlv > div:last-child span {
     color: white;
     font-size: 15px;
+    font-weight: 500;
 }
 
-.bot-tlv > div:first-child {
+.bottom-tlv > div:first-child {
     position: relative;
 }
 
-.bot-tlv > div:first-child div {
+.bottom-tlv > div:first-child div {
     position: absolute;
     background-color: rgb(8, 102, 255);
     bottom: -4px;
@@ -513,11 +649,11 @@ footer > span:nth-child(11):hover {
     height: 3px;
 }
 
-.bot-tlv > div:last-child {
+.bottom-tlv > div:last-child {
     border-radius: 5px;
 }
 
-.bot-tlv > div:last-child:hover {
+.bottom-tlv > div:last-child:hover {
     background-color: rgb(78, 79, 80)
 }
 
@@ -551,6 +687,8 @@ article {
 .name-datetime {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    row-gap: 3px;
 }
 
 .name-datetime > div {
@@ -561,7 +699,7 @@ article {
 .name-datetime > div:first-child span {
     color: white;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -626,8 +764,8 @@ article {
 
 .ori-author {
     display: flex;
-    align-items: center;
     column-gap: 8px;
+    align-items: center;
 }
 
 .ori-author > div:first-child,
@@ -641,12 +779,13 @@ article {
 .name-datetime-ori-author {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .name-datetime-ori-author > div:first-child span {
     color: white;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -690,6 +829,7 @@ article {
 .num-interact img {
     width: 18px;
     height: 18px;
+    cursor: pointer;
 }
 
 .num-interact span {
@@ -730,14 +870,14 @@ article {
 .interact span {
     color: rgb(176, 179, 184);
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .limit-cmt {
     display: flex;
     column-gap: 15px;
     padding: 12px 5px;
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+    /* border-bottom: 0.5px solid rgba(255, 255, 255, 0.1); */
 }
 
 .limit-cmt > div:first-child {
