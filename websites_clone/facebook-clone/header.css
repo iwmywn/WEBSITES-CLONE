@@ -48,7 +48,6 @@ header {
     border-radius: 9999px;
     border: none;
     padding-left: 40px;
-    padding-bottom: 4px;
     font-size: 15px;
     background-color: rgb(58, 59, 60);
     color: white;
@@ -62,9 +61,11 @@ header {
     color: rgb(176, 179, 184);
 }
 
-.left-section > div:last-child div {
+.left-section > div:last-child > div {
     position: absolute;
     left: 12px;
+    display: flex;
+    align-items: center;
 }
 
 .left-section > div:last-child img {
