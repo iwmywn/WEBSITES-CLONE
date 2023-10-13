@@ -17,15 +17,14 @@ section {
 }
 
 .container {
-    display: block;
     background-color: rgb(24, 25, 26);
-    padding-top: 15px;
+    padding: 15px 0px;
 }
 
 main {
     display: grid;
     grid-template-columns: 400px 625px;
     width: 1040px;
-    margin: auto;
+    margin: 0px auto;
     column-gap: 15px;
 }

@@ -835,8 +835,8 @@ article {
 
 .datetime > div:last-child .display-mode {
     top: 15px;
-    left: -25px;
-    right: -25px;
+    left: -20px;
+    right: -20px;
 }
 
 .right-author {
@@ -856,15 +856,24 @@ article {
 .pic-cap-post {
     display: flex;
     flex-direction: column;
-    /* row-gap: 5px; */
+    row-gap: 5px;
     border: 0.5px solid rgba(255, 255, 255, 0.1);
     border-radius: 15px;
 }
 
-.pic-post img {
-    width: 100%;
+.pic-post {
+    padding: 0px 30px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    background-color: rgb(144, 148, 156);
+    display: flex;
+    max-height: 750px;
+}
+
+.pic-post > img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
     cursor: pointer;
 }
 
@@ -913,7 +922,9 @@ article {
 
 .cap {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 7px;
 }
 
 .cap span {
