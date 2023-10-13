@@ -247,6 +247,14 @@
     background-color: rgb(58, 59, 60);
 }
 
+.sticky-bottom-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    position: sticky;
+    top: 55px;
+}
+
 .bottom-info {
     display: flex;
     flex-direction: column;
@@ -493,8 +501,8 @@ footer span {
 }
 
 footer img {
-    width: 11px;
-    height: 11px;
+    width: 10px;
+    height: 10px;
 }
 
 footer > span:first-child,
