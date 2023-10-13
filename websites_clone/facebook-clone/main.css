@@ -253,6 +253,7 @@
     row-gap: 15px;
     position: sticky;
     top: 55px;
+    z-index: 1;
 }
 
 .bottom-info {
