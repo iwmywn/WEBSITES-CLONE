@@ -23,6 +23,7 @@ footer > div:nth-child(2) div {
     top: 0;
     width: inherit;
     background-color: white;
+    z-index: 10;
 }
 
 .right-sidebar-1 {
@@ -98,7 +99,6 @@ footer > div:nth-child(2) div {
 .right-sidebar-3 {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 .right-sidebar-3 > div:not(:last-child) {
@@ -207,6 +207,8 @@ footer > div:nth-child(2) div {
 .right-sidebar-4 > div:last-child {
     padding: 16px;
     box-sizing: border-box;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
 }
 
 .right-sidebar-3 > div:last-child span,
@@ -218,14 +220,13 @@ footer > div:nth-child(2) div {
 .right-sidebar-4 {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 .right-sidebar-4 > div {
     padding: 10px 16px;
 }
 
-.right-sidebar-4 > div:nth-child(1) span {
+.right-sidebar-4 > div:first-child > span {
     font-size: 20px;
     font-weight: bold;
 }
@@ -235,16 +236,37 @@ footer > div:nth-child(2) div {
     column-gap: 10px;
 }
 
+.account-box > div:first-child {
+    position: relative;
+}
+
+.account-box > div:first-child:hover > .more-info-box {
+    opacity: 1;
+}
+
 .account-box > div:nth-child(odd) {
     display: flex;
     align-items: center;
 }
 
-.account-box > div:nth-child(1) img {
+.account-box > div:first-child > img {
     width: 40px;
     height: 40px;
     object-fit: cover;
     border-radius: 4px;
+}
+
+.account-box .more-info-box-1-1 {
+    background-color: black;
+}
+
+.account-box .more-info-box-1-1 > span {
+    color: white;
+}
+
+.more-info-boxx-3 {
+    top: 50px;
+    left: -130px;
 }
 
 .user-box {
