@@ -7,7 +7,8 @@ header {
     left: 0;
     right: 0;
     padding: 0 16px;
-    /* background-color: lightblue; */
+    background-color: white;
+    z-index: 10;
 }
 
 .left-section,
@@ -101,12 +102,43 @@ header {
     cursor: pointer;
 }
 
+.mid-section > div:first-child > div:hover {
+    background-color: rgb(240, 240, 240);
+}
+
 .mid-section > div:last-child {
     background-color: rgb(248, 248, 248);
+    position: relative;
 }
 
 .mid-section > div:last-child:hover {
     background-color: rgb(217, 217, 217);
+}
+
+.mid-section > div:first-child > div:hover .tooltip,
+.mid-section > div:last-child:hover .tooltip,
+.right-section div:not(:last-child):hover .tooltip {
+    opacity: 1;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgb(112, 112, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    top: 55px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    transition: opacity 0.2s;
+}
+
+.tooltip > span {
+    color: rgb(248, 248, 248);
+    font-size: 12px;
 }
 
 .right-section {
@@ -118,4 +150,87 @@ header {
     height: 32px;
     border-radius: 9999px;
     cursor: pointer;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 60px;
+    left: 260px;
+    right: 0;
+    background-color: white;
+    height: 60px;
+    align-items: center;
+    column-gap: 10px;
+    z-index: 9;
+}
+
+.header > div:not(:last-child) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 9px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.header > div:not(:last-child) > span {
+    font-size: 14px;
+}
+
+.header > div:first-child {
+    background-color: black;
+}
+
+.header > div:first-child > span {
+    color: white;
+}
+
+.header > div:not(:first-child):not(:last-child) {
+    background-color: rgb(248, 248, 248);
+}
+
+.header > div:not(:first-child):not(:last-child):hover {
+    background-color: rgb(229, 229, 229);
+}
+
+.next {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;   
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 40%);
+}
+
+.next > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 9999px;
+    position: relative;
+    transition: opacity 0.2s;
+    margin-right: 15px;
+}
+
+.next > div > img {
+    width: 24px;
+    height: 24px;
+}
+
+.next > div:hover {
+    background-color: rgb(229, 229, 229);
+}
+
+.next > div:hover .tooltip {
+    opacity: 1;
 }
