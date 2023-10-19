@@ -96,3 +96,59 @@ footer > div:last-child > span {
     font-size: 12px;
     color: rgb(144, 144, 144);
 }
+
+aside {
+    width: 72px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 7px;
+    border-radius: 8px;
+    padding: 16px 0;
+    cursor: pointer;
+}
+
+.container > div:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+.container > div > img {
+    width: 24px;
+    height: 24px;
+}
+
+.container > div > span {
+    font-size: 10px;
+}
+
+@media (max-width: 1250px) {
+    body {
+        padding-left: 92px;
+    }
+
+    .header {
+        left: 92px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    aside {
+        display: unset;
+    }
+}
