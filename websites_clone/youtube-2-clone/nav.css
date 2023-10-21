@@ -52,8 +52,34 @@ nav {
     font-weight: 500;
 }
 
+.subscriptions > div:not(:first-child):not(:last-child) {
+    position: relative;
+}
+
 .subscriptions > div:not(:first-child):not(:last-child) > img {
     border-radius: 9999px;
+}
+
+.subscriptions > div:nth-child(2) > div {
+    position: absolute;
+    right: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.subscriptions > div:nth-child(2) > div > img {
+    width: 16px;
+    height: 16px;
+}
+
+.subscriptions > div:nth-child(7) > div, 
+.subscriptions > div:nth-child(8) > div {
+    position: absolute;
+    right: 20px;
+    width: 4px;
+    height: 4px;
+    border-radius: 9999px;
+    background-color: rgb(6,95,212);
 }
 
 .title > div:first-child {
@@ -95,6 +121,10 @@ footer > div:not(:last-child) span {
 footer > div:last-child > span {
     font-size: 12px;
     color: rgb(144, 144, 144);
+}
+
+footer > div:not(:last-child) span {
+    cursor: pointer;
 }
 
 aside {
