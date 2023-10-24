@@ -1,6 +1,6 @@
 main {
-    display: grid;
-    grid-template-columns: 630px 383px;
+    display: flex;
+    justify-content: center;
     /* border: 1px solid black; */
     padding-top: 45px;
 }
@@ -36,6 +36,10 @@ main {
     cursor: pointer;
 }
 
+main > div:first-child {
+    width: 630px;
+    flex-shrink: 0;
+}
 
 .mid-header {
     display: flex;
@@ -280,6 +284,7 @@ main {
 
 .right-box {
     padding-left: 64px;
+    width: 383px;
 }
 
 .right {
