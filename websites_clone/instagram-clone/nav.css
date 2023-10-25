@@ -6,10 +6,15 @@ nav {
     width: 245px;
     border-right: 1px solid rgb(220, 220, 220);
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .instagram-logo-box {
-    margin: 40px 0px 35px 25px;
+    margin: 20px 14px 15px 25px;
+    height: 48px;
 }
 
 .instagram-logo {
@@ -19,21 +24,32 @@ nav {
 .side-bar {
     display: flex;
     flex-direction: column;
-    margin: 0px 14px;
-    row-gap: 13px;
+    row-gap: 10px;
+}
+
+.side-bar > div {
+    margin: 0 14px;
 }
 
 .nav-box {
     display: flex;
     align-items: center;
-    padding: 9px 9px 9px 9px;
+    padding-left: 12px;
+    height: 48px;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.2s;
 }
 
-.nav-box2 {
-    margin-top: 30px;
+nav > div:last-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+nav > div:last-child > div {
+    margin: 0 14px;
+    height: 48px;
 }
 
 .nav-box2:hover .threads-box {
@@ -81,4 +97,109 @@ nav {
 
 .icon-name-box {
     margin-left: 16px;
+}
+
+aside {
+    width: 52px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    padding: 20px 12px;
+    border-right: 1px solid rgb(220, 220, 220);
+    display: none;
+}
+
+aside > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.top > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.top > div:first-child > img {
+    width: 22px;
+    height: 22px;
+}
+
+.top > div:last-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.top > div:last-child > div {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    /* box-sizing: border-box; */
+}
+
+.top > div:last-child > div > img {
+    width: 24px;
+    height: 24px;
+}
+
+.top > div:last-child > div:last-child > img {
+    border-radius: 9999px;
+}
+
+
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.bottom > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.top > div:first-child:hover,
+.top > div:last-child > div:hover,
+.bottom > div:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+@media (max-width: 1350px) {
+    body {
+        padding-left: unset;
+    }
+
+    nav {
+        display: none;
+    }
+
+    aside {
+        display: unset;
+    }
 }

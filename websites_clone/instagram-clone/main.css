@@ -578,3 +578,9 @@ main > div:first-child {
 .box-2 .language-span:hover {
     text-decoration: none;
 }
+
+@media (max-width: 1255px) {
+    .right-box {
+        display: none;
+    }
+}
