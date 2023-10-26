@@ -149,6 +149,7 @@ main > div:first-child {
 
 .post-photo {
     width: 100%;
+    border-radius: 5px;
 }
 
 .interact-box {
@@ -579,7 +580,7 @@ main > div:first-child {
     text-decoration: none;
 }
 
-@media (max-width: 1255px) {
+@media (max-width: 1265px) {
     .right-box {
         display: none;
     }

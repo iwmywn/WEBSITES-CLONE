@@ -13,7 +13,7 @@ nav {
 }
 
 .instagram-logo-box {
-    margin: 20px 14px 15px 25px;
+    margin: 35px 14px 15px 25px;
     height: 48px;
 }
 
@@ -34,11 +34,12 @@ nav {
 .nav-box {
     display: flex;
     align-items: center;
-    padding-left: 12px;
+    padding-left: 11px;
     height: 48px;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.2s;
+    box-sizing: border-box;
 }
 
 nav > div:last-child {
@@ -62,29 +63,35 @@ nav > div:last-child > div {
 
 .threads-box {
     opacity: 0;
+    display: flex;
+    margin-right: 15px;
+}
+
+.threads-box a {
+    display: flex;
+    align-items: center;
 }
 
 .nav-box:hover {
     background-color: rgb(242, 242, 242);
 }
 
-.nav-box:hover .icon-box {
-    width: 26px;
-    height: 26px;
-    margin: -1px;
+.nav-box:hover .icon {
+    transform: scale(1.03);
 }
 
 .icon-box {
-    height: 24px;
-    width: 24px;
-    transition: width 0.2s,
-                height 0.2s,
-                margin 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    width: 26px;
+    transition: transform 0.2s;
 }
 
 .icon {
-    width: 100%;
-    height: 100%;
+    width: 24px;
+    height: 24px;
 }
 
 .avatar {
@@ -132,7 +139,7 @@ aside > div {
     height: 48px;
     border-radius: 10px;
     cursor: pointer;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .top > div:first-child > img {
@@ -154,19 +161,17 @@ aside > div {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    /* box-sizing: border-box; */
 }
 
 .top > div:last-child > div > img {
     width: 24px;
     height: 24px;
+    transition: transform 0.2s;
 }
 
 .top > div:last-child > div:last-child > img {
     border-radius: 9999px;
 }
-
-
 
 .bottom {
     display: flex;
@@ -182,12 +187,18 @@ aside > div {
     height: 48px;
     border-radius: 10px;
     cursor: pointer;
+    transition: transform 0.2s;
 }
 
 .top > div:first-child:hover,
 .top > div:last-child > div:hover,
 .bottom > div:hover {
     background-color: rgb(242, 242, 242);
+}
+
+.top > div:last-child > div:hover > img,
+.bottom > div:hover > img {
+    transform: scale(1.03);
 }
 
 @media (max-width: 1350px) {
@@ -201,5 +212,15 @@ aside > div {
 
     aside {
         display: unset;
+    }
+}
+
+@media (max-height: 700px) {
+    nav > div:last-child > div:first-child {
+        display: none;
+    }
+
+    .bottom > div:first-child {
+        display: none;
     }
 }
