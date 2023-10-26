@@ -285,17 +285,14 @@ main > div:first-child {
 
 .right-box {
     padding-left: 64px;
-    width: 383px;
 }
 
 .right {
     display: flex;
     flex-direction: column;
-    right: 145px;
     top: 60px;
     width: 290px;
     row-gap: 12px;
-    /* background-color: lightpink; */
     margin-bottom: 30px;
     padding-left: 10px;
 }
@@ -580,7 +577,7 @@ main > div:first-child {
     text-decoration: none;
 }
 
-@media (max-width: 1265px) {
+@media (max-width: 1200px) {
     .right-box {
         display: none;
     }
