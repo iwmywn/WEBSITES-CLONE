@@ -96,6 +96,11 @@ footer > div:nth-child(2) div {
     padding: 9px 18px;
 }
 
+.right-sidebar-2 > div:nth-child(3) button:hover,
+.account-box > div:last-child button:hover {
+    background-color: rgb(39, 44, 48);
+}
+
 .right-sidebar-3 {
     display: flex;
     flex-direction: column;
@@ -240,7 +245,8 @@ footer > div:nth-child(2) div {
     position: relative;
 }
 
-.account-box > div:first-child:hover > .more-info-box {
+.account-box > div:first-child:hover .more-info-box,
+.user-box > div:first-child:hover .more-info-box {
     opacity: 1;
 }
 
@@ -269,6 +275,11 @@ footer > div:nth-child(2) div {
     left: -130px;
 }
 
+.more-info-boxx-4 {
+    top: 25px;
+    left: -110px;
+}
+
 .user-box {
     display: flex;
     flex-direction: column;
@@ -279,18 +290,23 @@ footer > div:nth-child(2) div {
     display: flex;
     align-items: center;
     column-gap: 3px;
+    position: relative;
 }
 
-.user-box > div:nth-child(1) span {
+.user-box > div:nth-child(1) > span {
     font-weight: bold;
     font-size: 15px;
     white-space: nowrap;
 }
 
-.user-box > div:nth-child(1) img {
+.user-box > div:nth-child(1) > img {
     width: 18px;
     height: 18px;
     object-fit: cover;
+}
+
+.user-box > div:first-child:hover > span {
+    text-decoration: underline;
 }
 
 .user-box > div:nth-child(2) span {
