@@ -314,6 +314,10 @@ footer > div:nth-child(2) div {
     color: rgb(102, 102, 102);
 }
 
+.user-box > div:last-child {
+    display: flex;
+}
+
 .account-box > div:nth-child(3) button {
     background-color: black;
     color: white;
@@ -332,6 +336,7 @@ footer > div {
     display: flex;
     column-gap: 10px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 footer span {
@@ -343,16 +348,47 @@ footer span:not(.license):hover {
     text-decoration: underline;
 }
 
-footer > div:nth-child(2) div:hover span {
-    text-decoration: underline;
-}
-
 footer img {
     width: 13px;
     height: 13px;
 }
 
-footer > div:nth-child(2) div {
+footer > div > div {
     display: flex;
     align-items: flex-end;
+    column-gap: 2px;
+}
+
+@media (max-width: 1100px) {
+    .right-sidebar {
+        width: 290px;
+    }
+
+    .user-box > div:first-child {
+        width: 122px;
+    }
+
+    .user-box > div:first-child > span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 80px;
+    }
+    
+    .user-box > div:last-child > span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 120px;
+    }
+
+    footer > div {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1020px) {
+    .right-sidebar {
+        display: none;
+    }
 }

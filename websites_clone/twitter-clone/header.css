@@ -2,6 +2,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -9,6 +10,12 @@ header {
     /* background-color: lightblue; */
     border-right: 0.5px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+}
+
+aside {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
 }
 
 nav > div:not(div:nth-child(1)),
@@ -69,14 +76,21 @@ nav > div:last-child {
     border-radius: 9999px;
     border: none;
     background-color: rgb(29, 155, 240);
+    transition: background-color 0.2s;
+}
+
+.tweet > span {
     font-size: 17px;
     color: white;
     font-weight: bold;
-    transition: background-color 0.2s;
 }
 
 .tweet:hover {
     background-color: rgb(26, 140, 216);
+}
+
+.tweet > img {
+    display: none;
 }
 
 .info-box {
@@ -133,4 +147,47 @@ nav > div:last-child {
 .info-box > div:last-child img {
     width: 19px;
     height: 19px;
+}
+
+@media (max-width: 1300px) {
+    .container {
+        grid-template-columns: 70px auto;
+    }
+
+    header {
+        width: 70px;
+    }
+
+    .icon-btn {
+        width: 50px;
+    }
+
+    .icon-btn > span {
+        display: none;
+    }
+
+    .tweet {
+        width: 50px;
+    }
+
+    .tweet > span {
+        display: none;
+    }
+
+    .tweet > img {
+        display: unset;
+    }
+
+    .info-box > div:not(:first-child) {
+        display: none;
+    }
+
+    .info-box > div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 43px;
+        height: 43px;
+        border-radius: 9999px;
+    }
 }
