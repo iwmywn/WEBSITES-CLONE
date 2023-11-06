@@ -10,6 +10,7 @@ header {
     /* background-color: lightblue; */
     border-right: 0.5px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+    overflow-y: auto;
 }
 
 aside {
@@ -24,10 +25,6 @@ nav > div:not(div:nth-child(1)),
 .tweet,
 .info-box {
     cursor: pointer;
-}
-
-nav > div:first-child {
-    margin-bottom: 5px;
 }
 
 .logo {
@@ -66,8 +63,16 @@ nav > div:not(div:nth-child(1)):hover .icon-btn {
     font-size: 20px;
 }
 
+nav > div:first-child {
+    margin-bottom: 8px;
+}   
+
+nav > div:not(:first-child):not(:last-child) {
+    margin-bottom: 9px;
+}
+
 nav > div:last-child {
-    margin-top: 5px;
+    margin: 12px 0 15px 0;
 }
 
 .tweet {
@@ -189,5 +194,25 @@ nav > div:last-child {
         width: 43px;
         height: 43px;
         border-radius: 9999px;
+    }
+}
+
+@media (max-height: 855px) {
+    nav > div:first-child {
+        margin-bottom: 5px;
+    }
+
+    nav > div:not(:first-child):not(:last-child) {
+        margin-bottom: unset;
+    }
+
+    nav > div:last-child {
+        margin-top: 7px;
+    }
+}
+
+@media (max-height: 750px) {
+    nav > div:nth-child(7) {
+        display: none;
     }
 }
