@@ -184,7 +184,7 @@ header {
     top: -4px;
 }
 
-.right-section > div:nth-child(2) .num-mess-noti {
+.right-section > div:nth-child(3) .num-mess-noti {
     height: 20px;
     width: 20px;
     right: -8px;
@@ -196,8 +196,24 @@ header {
     font-size: 13px;
 }
 
-.right-section > div:nth-child(3) .num-new-noti {
+.right-section > div:nth-child(4) .num-new-noti {
     height: 20px;
     right: -19px;
     padding: 0px 5px;
+}
+
+@media (min-width: 1100.1px) {
+    .right-section > div:first-child {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    .right-section > div:first-child {
+        display: flex;
+    }
+
+    .right-section > div:nth-child(2) {
+        display: none;
+    }
 }
