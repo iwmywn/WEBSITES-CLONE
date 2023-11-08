@@ -78,6 +78,8 @@ header {
     align-items: center;
     column-gap: 8px;
     margin-left: 15px;
+    flex: 1;
+    max-width: 607px; 
 }
 
 .mid-section > div {
@@ -85,7 +87,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 115px;
+    flex: 1;
     height: 50px;
     border-radius: 10px;
     transition: background-color 0.2s;
@@ -202,6 +204,20 @@ header {
     padding: 0px 5px;
 }
 
+@media (max-width: 1360px) {
+    .left-section {
+        max-width: 205px
+    }
+
+    .left-section > div:last-child input {
+        max-width: 40px;
+    }
+
+    .right-section {
+        max-width: 205px;
+    }
+}
+
 @media (min-width: 1100.1px) {
     .right-section > div:first-child {
         display: none;
@@ -214,6 +230,27 @@ header {
     }
 
     .right-section > div:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (min-width: 750.1px) {
+    .mid-section > div:first-child {
+        display: none;
+    }
+}
+
+@media (max-width: 770px) {
+    .left-section {
+        max-width: 102px;
+    }
+
+    .mid-section > div:first-child {
+        display: flex;
+        max-width: 50px;
+    }
+
+    .mid-section > div:not(:first-child) {
         display: none;
     }
 }
