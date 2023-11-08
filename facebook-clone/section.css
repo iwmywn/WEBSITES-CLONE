@@ -3,6 +3,7 @@
     height: 450px;
     position: relative;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .cover-photo > div {
