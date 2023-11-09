@@ -23,7 +23,7 @@ nav {
   padding: 30px 0;
 }
 
-.top-footer div {
+.top-footer .section {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -86,4 +86,35 @@ nav {
 
 .bottom-footer .other-options div:nth-child(odd):hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1025px) {
+  .top-footer {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  .top-footer .section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: none;
+  }
+
+  .section>div:not(:first-child):not(:last-child) {
+    display: none;
+  }
+
+  .section>svg {
+    display: block !important;
+  }
+
+  .bottom-footer .other-options {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  .bottom-footer .other-options>div:nth-child(even) {
+    display: none;
+  }
 }

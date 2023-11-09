@@ -47,6 +47,15 @@ section {
   background-color: rgba(0, 0, 0, .2);
 }
 
+.rewards {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.rewards:hover {
+  text-decoration: none;
+}
+
 @media (max-width: 1000px) {
   main>section:not(:first-child) .right>div:first-child {
     font-size: 28px !important;
