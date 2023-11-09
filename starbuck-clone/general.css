@@ -6,3 +6,7 @@
   box-sizing: border-box;
   font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+
+body {
+  overflow-x: hidden;
+}

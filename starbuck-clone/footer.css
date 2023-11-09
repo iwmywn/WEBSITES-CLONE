@@ -1,13 +1,20 @@
 footer {
   box-shadow: 0 -3px 3px rgba(0, 0, 0, .15);
   display: flex;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+nav {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  width: 1440px;
 }
 
 .top-footer,
 .bottom-footer {
-  width: 1440px;
+  width: 100%;
 }
 
 .top-footer {
