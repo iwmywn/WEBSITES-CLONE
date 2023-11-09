@@ -1,0 +1,97 @@
+header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 0 30px;
+}
+
+header * {
+  cursor: pointer;
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  column-gap: 25px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.left-section {
+  text-transform: uppercase;
+}
+
+.left-section svg {
+  width: 51px;
+  height: 51px;
+}
+
+.left-section div:hover {
+  color: #006241;
+}
+
+.right-section .find-a-store {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.right-section .find-a-store:hover {
+  color: #006241;
+}
+
+.right-section .sign-in,
+.right-section .join-now {
+  padding: 5px 15px;
+  border: 1px solid black;
+  border-radius: 9999px;
+}
+
+.right-section .join-now {
+  background-color: black;
+  color: white;
+}
+
+.right-section .sign-in:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.right-section .join-now:hover {
+  background-color: rgba(0, 0, 0, .7);
+  border-color: rgba(0, 0, 0, .7);
+}
+
+.responsive-header {
+  display: none;
+}
+
+.responsive-header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  transition: background-color 0.3s;
+}
+
+.responsive-header div:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+@media (max-width: 830px) {
+  .left-section>div:not(:first-child) {
+    display: none;
+  }
+
+  .right-section {
+    display: none;
+  }
+
+  .responsive-header {
+    display: block;
+  }
+}

@@ -1,0 +1,87 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+section {
+  margin-bottom: 30px;
+  max-width: 1440px;
+  display: flex;
+}
+
+.left,
+.right {
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.left img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.right {
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+  color: white;
+  padding: 32px 50px;
+  text-align: center;
+}
+
+.right .access-button {
+  padding: 8px 13px;
+  border: 1px solid white;
+  font-size: 16px;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.right .access-button:hover {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+@media (max-width: 1000px) {
+  main>section:not(:first-child) .right>div:first-child {
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  main>section:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  main>section:first-child .right>div:first-child,
+  main>section:not(:first-child) .right>div:nth-child(2) {
+    font-size: 22px !important;
+  }
+
+  main>section:first-child .right>div:nth-child(2) {
+    font-size: 16px !important;
+  }
+
+  main>section:first-child .right>div:last-child,
+  main>section:not(:first-child) .right>div:last-child {
+    font-size: 14px !important;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    max-width: 100%;
+  }
+
+  .right {
+    padding: 32px 25px;
+  }
+}
