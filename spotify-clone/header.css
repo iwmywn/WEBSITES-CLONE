@@ -9,6 +9,8 @@ header {
   height: 70px;
   background-color: #121212;
   padding: 0 15px;
+  border-radius: 10px;
+  z-index: 10;
 }
 
 header svg {
