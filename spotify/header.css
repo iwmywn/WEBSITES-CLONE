@@ -35,6 +35,7 @@ header svg {
 
 .right-section-header {
   column-gap: 10px;
+  margin-left: 220px;
 }
 
 .right-section-header>div {
@@ -58,6 +59,7 @@ header svg {
   padding: 8px 13px;
   background-color: #000;
   border-radius: 9999px;
+  flex-shrink: 0;
 }
 
 .right-section-header>div:not(:first-child):not(:nth-child(2)) {
@@ -68,4 +70,14 @@ header svg {
   justify-content: center;
   background-color: #000;
   border-radius: 9999px;
+}
+
+@media (max-width: 1020px) {
+  .left-section-header>div:last-child {
+    display: none;
+  }
+
+  .right-section-header>div:first-child {
+    display: none;
+  }
 }

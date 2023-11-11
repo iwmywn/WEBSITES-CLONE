@@ -20,12 +20,14 @@ footer svg {
   display: flex;
   flex: 1;
   max-width: 450px;
+  min-width: 300px;
 }
 
 .middle-section-footer {
   display: flex;
   flex-direction: column;
   flex: 1;
+  min-width: 300px;
   row-gap: 5px;
 }
 

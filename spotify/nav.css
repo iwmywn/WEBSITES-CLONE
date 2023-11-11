@@ -40,6 +40,11 @@ nav {
 
 .top-section-nav .search {
   color: rgb(179, 179, 179);
+  transition: color 0.2s;
+}
+
+.top-section-nav .search:hover {
+  color: white;
 }
 
 .bottom-section-nav {
@@ -63,6 +68,11 @@ nav {
   column-gap: 15px;
   color: rgb(179, 179, 179);
   font-weight: bold;
+  transition: color 0.2s;
+}
+
+.bottom-section-nav .section-nav-1 div:hover {
+  color: white;
 }
 
 .bottom-section-nav .section-nav-1>div:first-child {
@@ -70,9 +80,16 @@ nav {
 }
 
 .bottom-section-nav .section-nav-1>div:last-child>div {
-  padding: 5px;
+  padding: 7px;
   border-radius: 9999px;
   cursor: pointer;
+  transition: background-color 0.2s;
+  color: rgb(179, 179, 179);
+}
+
+.bottom-section-nav .section-nav-1>div:last-child>div:hover {
+  background-color: rgba(30, 30, 30);
+  color: white;
 }
 
 .bottom-section-nav .section-nav-2 {
@@ -85,7 +102,11 @@ nav {
 .bottom-section-nav .section-nav-2>div {
   padding: 7px 15px;
   border-radius: 9999px;
-  background-color:rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.bottom-section-nav .section-nav-2>div:hover {
+  background-color: rgba(255, 255, 255, .2);
 }
 
 .bottom-section-nav .section-nav-3 {
@@ -99,15 +120,27 @@ nav {
   align-items: center;
   column-gap: 5px;
   color: rgb(179, 179, 179);
-  padding: 5px;
+  padding: 7px;
 }
 
 .bottom-section-nav .section-nav-3>div:first-child {
   border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.bottom-section-nav .section-nav-3>div:first-child:hover {
+  background-color: rgba(30, 30, 30);
+  color: white;
 }
 
 .bottom-section-nav .section-nav-3>div:last-child {
   cursor: pointer;
+  transition: color 0.2s;
+}
+
+.bottom-section-nav .section-nav-3>div:last-child:hover {
+  color: white;
 }
 
 .bottom-section-nav .section-nav-4 {
@@ -120,6 +153,12 @@ nav {
   display: flex;
   column-gap: 10px;
   align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.bottom-section-nav .section-nav-4 .list:hover {
+  background-color: rgb(26, 26, 26);
 }
 
 .bottom-section-nav .section-nav-4 .list .info {
