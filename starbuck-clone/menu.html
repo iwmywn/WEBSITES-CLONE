@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Starbucks Clone</title>
+  <title>Menu</title>
   <link rel="stylesheet" href="styles/shared/general.css">
   <link rel="stylesheet" href="styles/shared/header.css">
-  <link rel="stylesheet" href="styles/pages/home/main.css">
+  <link rel="stylesheet" href="styles/pages/menu/shared/header.css">
+  <link rel="stylesheet" href="styles/pages/menu/menu-header/main.css">
+  <link rel="stylesheet" href="styles/pages/menu/shared/footer.css">
   <link rel="stylesheet" href="styles/shared/footer.css">
   <link rel="icon" href="icons/icon.webp" type="image/x-icon">
 </head>
@@ -31,7 +33,7 @@
           </svg>
         </a>
       </div>
-      <a href="menu.html">Menu</a>
+      <a class="current-page" href="menu.html">Menu</a>
       <a href="rewards.html">Rewards</a>
       <a href="gift-cards.html">Gift cards</a>
     </div>
@@ -69,96 +71,189 @@
     </div>
   </header>
 
-  <main>
-    <section style="background-color: #ef3340">
-      <div class="left">
-        <img
-          alt="A hand holding a smartphone with the Starbucks® mobile app open mobile ordering a Peppermint Mocha on a multi-colored background."
-          class="block" src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87320.jpg">
-      </div>
-      <div class="right">
-        <div style="font-size: 24px;
-                    font-weight: bold;">Festivity at your fingertips</div>
-        <div style="font-size: 19px;">
-          Make the season even brighter when you join Starbucks® Rewards. You’ll save time with easy mobile ordering
-          and
-          earn free favorites.*
-        </div>
-        <div class="access-button">Join for free</div>
-      </div>
-    </section>
+  <div class="header">
+    <a class="current-header" href="menu.html">Menu</a>
+    <a href="featured.html">Featured</a>
+    <a href="#">Previous</a>
+    <a href="#">Favorites</a>
+  </div>
 
-    <section style="background-color: #006241">
-      <div class="right">
-        <div style="font-size: 50px;
-                    font-weight: bold;">Let’s celebrate</div>
-        <div style="font-size: 24px;">
-          Your holi-yay favorites are here. Pick up a Peppermint Mocha, Iced Sugar Cookie Almondmilk Latte or Caramel
-          Brulée Latte.
-        </div>
-        <div class="access-button">Find your favourie</div>
+  <div class="main">
+    <div class="left-section-main">
+      <div class="category">
+        <span class="title">Drinks</span>
+        <span>Oleato™</span>
+        <span>Hot Coffees</span>
+        <span>Hot Teas</span>
+        <span>Hot Drinks</span>
+        <span>Frappuccino® Blended Beverages</span>
+        <span>Cold Coffees</span>
+        <span>Iced Teas</span>
+        <span>Cold Drinks</span>
       </div>
-      <div class="left">
-        <img alt="Two hot espresso drinks with whipped cream and an iced espresso drink in holiday-themed to-go cups."
-          class="block" src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87323.png">
+      <div class="category">
+        <span class="title">Food</span>
+        <span>Hot Breakfast</span>
+        <span>Oatmeal & Yogurt</span>
+        <span>Bakery</span>
+        <span>Lunch</span>
+        <span>Snacks & Sweets</span>
       </div>
-    </section>
-
-    <section style="background-color: #b37697">
-      <div class="left">
-        <img alt="Creamy iced chai drink with a foamy topping in a clear to-go cup." class="block"
-          src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87325.png">
+      <div class="category">
+        <span class="title">At home coffee</span>
+        <span>Whole Bean</span>
+        <span>Ground</span>
+        <span>VIA® Instant</span>
       </div>
-      <div class="right">
-        <div style="font-size: 50px;
-                    font-weight: bold;">Gingerbread meets chai</div>
-        <div style="font-size: 24px;">
-          Say hello to the festive new Iced Gingerbread Oatmilk Chai. It's the beloved flavor of gingerbread with a
-          twist. Here for a limited time.
-        </div>
-        <div class="access-button">Order now</div>
+      <div class="category">
+        <span class="title">Merchandise</span>
+        <span>Cold Cups</span>
+        <span>Tumblers</span>
+        <span>Mugs</span>
+        <span>Other</span>
       </div>
-    </section>
-
-    <section style="background-color: #76232f">
-      <div class="right">
-        <div style="font-size: 50px;
-                    font-weight: bold;">Nicely spiced</div>
-        <div style="font-size: 24px;">
-          Our Gingerbread Loaf with citrusy icing pairs deliciously with coffee.
-        </div>
-        <div class="access-button">Order now</div>
-      </div>
-      <div class="left">
-        <img alt="Sliced loaf with white icing." class="block"
-          src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87328.jpg">
-      </div>
-    </section>
-
-    <section style="background-color: #1e3932">
-      <div class="left">
-        <img alt="Red coffee bag." class="block"
-          src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87330.jpg">
-      </div>
-      <div class="right">
-        <div style="font-size: 50px;
-                    font-weight: bold;">Brew a cup of magic</div>
-        <div style="font-size: 24px;">
-          The blends you love are back, including Starbucks® Christmas Blend 2023 with rare aged Sumatra.
-        </div>
-        <div class="access-button">Order now</div>
-      </div>
-    </section>
-
-    <div style="font-size: 14px;
-                max-width: max-content;
-                text-align: center;
-                margin: 0 200px;">
-      *At participating stores. Some restrictions apply. See
-      <span class="rewards">https://www.starbucks.com/rewards</span>
-      for details.
     </div>
-  </main>
+    <div class="right-section-main">
+      <div class="title">Menu</div>
+      <div class="category">
+        <div class="title">Drinks</div>
+        <div class="product-container">
+          <div class="product">
+            <img src="images/drinks/oleato.avif" alt="product">
+            Oleato™
+          </div>
+          <div class="product">
+            <img src="images/drinks/hotcoffees.avif" alt="product">
+            Hot Coffees
+          </div>
+          <div class="product">
+            <img src="images/drinks/hotteas.avif" alt="product">
+            Hot Teas
+          </div>
+          <div class="product">
+            <img src="images/drinks/hotdrinks.avif" alt="product">
+            Hot Drinks
+          </div>
+          <div class="product">
+            <img src="images/drinks/frappuccino.avif" alt="product">
+            Frappuccino® Blended Beverages
+          </div>
+          <div class="product">
+            <img src="images/drinks/coldcoffees.avif" alt="product">
+            Cold Coffees
+          </div>
+          <div class="product">
+            <img src="images/drinks/icedtea.avif" alt="product">
+            Iced Teas
+          </div>
+          <div class="product">
+            <img src="images/drinks/colddrinks.avif" alt="product">
+            Cold Drinks
+          </div>
+        </div>
+
+        <div class="title">Drinks</div>
+        <div class="product-container">
+          <div class="product">
+            <img src="images/food/hotbreakfast.avif" alt="product">
+            Hot Breakfast
+          </div>
+          <div class="product">
+            <img src="images/food/oatmeal-yogurt.avif" alt="product">
+            Oatmeal & Yogurt
+          </div>
+          <div class="product">
+            <img src="images/food/bakery.avif" alt="product">
+            Bakery
+          </div>
+          <div class="product">
+            <img src="images/food/lunch.avif" alt="product">
+            Lunch
+          </div>
+          <div class="product">
+            <img src="images/food/snacks-sweets.avif" alt="product">
+            Snacks & Sweets
+          </div>
+        </div>
+
+        <div class="title">At Home Coffee</div>
+        <div class="product-container">
+          <div class="product">
+            <img src="images/at-home-coffee/whole-bean.avif" alt="product">
+            Whole Bean
+          </div>
+          <div class="product">
+            <img src="images/at-home-coffee/ground.avif" alt="product">
+            Ground
+          </div>
+          <div class="product">
+            <img src="images/at-home-coffee/via-instant.avif" alt="product">
+            VIA® Instant
+          </div>
+        </div>
+
+        <div class="title">At Home Coffee</div>
+        <div class="product-container">
+          <div class="product">
+            <img src="images/at-home-coffee/whole-bean.avif" alt="product">
+            Whole Bean
+          </div>
+          <div class="product">
+            <img src="images/at-home-coffee/ground.avif" alt="product">
+            Ground
+          </div>
+          <div class="product">
+            <img src="images/at-home-coffee/via-instant.avif" alt="product">
+            VIA® Instant
+          </div>
+        </div>
+
+        <div class="title">Merchandise</div>
+        <div class="product-container">
+          <div class="product">
+            <img src="images/merchandise/cold-cups.avif" alt="product">
+            Cold Cups
+          </div>
+          <div class="product">
+            <img src="images/merchandise/tumbles.avif" alt="product">
+            Tumblers
+          </div>
+          <div class="product">
+            <img src="images/merchandise/mugs.avif" alt="product">
+            Mugs
+          </div>
+          <div class="product">
+            <img src="images/merchandise/other.avif" alt="product">
+            Other
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="left-section">
+      <div>
+        <span>For item availability</span>
+        <span>Choose a store</span>
+      </div>
+      <svg aria-hidden="true" class="valign-middle ml2 color-white" focusable="false"
+        preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+        style="width: 18px; height: 18px; overflow: visible; fill: currentcolor;">
+        <path
+          d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"
+          fill="#FFFFFF"></path>
+      </svg>
+    </div>
+    <div class="right-section">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 32 32"
+        width="32">
+        <path
+          d="m9.02040211 6c.27495185-3.35622386 3.29478189-6 6.97959789-6s6.704646 2.64377614 6.9795979 6h3.1745743c1.3372781 0 1.8222075.13923842 2.3110964.40069906.4888888.26146063.8725717.6451435 1.1340323 1.13403238.2614607.48888889.4006991.97381825.4006991 2.31109636v17.3083444c0 1.3372781-.1392384 1.8222075-.4006991 2.3110964-.2614606.4888888-.6451435.8725717-1.1340323 1.1340323-.4888889.2614607-.9738183.4006991-2.3110964.4006991h-20.3083444c-1.33727811 0-1.82220747-.1392384-2.31109636-.4006991-.48888888-.2614606-.87257175-.6451435-1.13403238-1.1340323-.26146064-.4888889-.40069906-.9738183-.40069906-2.3110964v-17.3083444c0-1.33727811.13923842-1.82220747.40069906-2.31109636.26146063-.48888888.6451435-.87257175 1.13403238-1.13403238.48888889-.26146064.97381825-.40069906 2.31109636-.40069906zm1.99066619 0h9.9778634c-.1713013-2.31577142-2.3105396-4.20000005-4.9889317-4.20000005s-4.8176304 1.88422863-4.9889317 4.20000005zm-5.0881544 2c-.66863905 0-.91110373.06961921-1.15554818.20034953-.24444444.13073032-.43628587.32257175-.56701619.56701619-.13073032.24444445-.20034953.48690913-.20034953 1.15554818v17.1541722c0 .6686391.06961921.9111037.20034953 1.1555482.13073032.2444444.32257175.4362859.56701619.5670162.24444445.1307303.48690913.2003495 1.15554818.2003495h20.1541722c.6686391 0 .9111037-.0696192 1.1555482-.2003495.2444444-.1307303.4362859-.3225718.5670162-.5670162.1307303-.2444445.2003495-.4869091.2003495-1.1555482v-17.1541722c0-.66863905-.0696192-.91110373-.2003495-1.15554818-.1307303-.24444444-.3225718-.43628587-.5670162-.56701619-.2444445-.13073032-.4869091-.20034953-1.1555482-.20034953z"
+          fill="#fff" fill-opacity=".7" fill-rule="evenodd" />
+      </svg>
+    </div>
+  </div>
 
   <footer>
     <nav>
@@ -173,7 +268,8 @@
           <div>Customer Service</div>
           <div>Contact us</div>
           <svg aria-hidden="true" class="valign-middle sb-caret-expander__icon ml2" focusable="false"
-            preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor;display:none;cursor:pointer;"
+            preserveAspectRatio="xMidYMid meet"
+            style="width:32px;height:32px;overflow:visible;fill:currentColor;display:none;cursor:pointer;"
             viewBox="0 0 24 24">
             <path
               d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232">
@@ -190,7 +286,8 @@
           <div>U.S. Careers</div>
           <div>International Careers</div>
           <svg aria-hidden="true" class="valign-middle sb-caret-expander__icon ml2" focusable="false"
-            preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor;display:none;cursor:pointer;"
+            preserveAspectRatio="xMidYMid meet"
+            style="width:32px;height:32px;overflow:visible;fill:currentColor;display:none;cursor:pointer;"
             viewBox="0 0 24 24">
             <path
               d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232">
@@ -204,7 +301,8 @@
           <div>Planet</div>
           <div>Environmental and Social Impact Reporting</div>
           <svg aria-hidden="true" class="valign-middle sb-caret-expander__icon ml2" focusable="false"
-            preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor;display:none;cursor:pointer;"
+            preserveAspectRatio="xMidYMid meet"
+            style="width:32px;height:32px;overflow:visible;fill:currentColor;display:none;cursor:pointer;"
             viewBox="0 0 24 24">
             <path
               d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232">
@@ -219,7 +317,8 @@
           <div>Corporate Gift Card Sales</div>
           <div>Office and Foodservice Coffee</div>
           <svg aria-hidden="true" class="valign-middle sb-caret-expander__icon ml2" focusable="false"
-            preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor;display:none;cursor:pointer;"
+            preserveAspectRatio="xMidYMid meet"
+            style="width:32px;height:32px;overflow:visible;fill:currentColor;display:none;cursor:pointer;"
             viewBox="0 0 24 24">
             <path
               d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232">
@@ -235,7 +334,8 @@
           <div>Order and Pick Up Option</div>
           <div>Explore and Find Coffee for Home</div>
           <svg aria-hidden="true" class="valign-middle sb-caret-expander__icon ml2" focusable="false"
-            preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor;display:none;cursor:pointer;"
+            preserveAspectRatio="xMidYMid meet"
+            style="width:32px;height:32px;overflow:visible;fill:currentColor;display:none;cursor:pointer;"
             viewBox="0 0 24 24">
             <path
               d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232">

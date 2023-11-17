@@ -1,0 +1,38 @@
+.header {
+  height: 50px;
+  background-color: rgb(249, 249, 249);
+  padding-left: 105px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  font-size: 13px;
+}
+
+.header a {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.current-header {
+  border-bottom: 1px solid black;
+}
+
+@media (max-width: 700px) {
+  header {
+    height: 70px;
+    padding: 0 15px;
+  }
+
+  header .left-section svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header {
+    padding-left: 15px;
+  }
+}
