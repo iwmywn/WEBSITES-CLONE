@@ -1,0 +1,67 @@
+.main {
+  padding: 30px 30px 20px 105px;
+}
+
+.main .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main .container section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.main .container section .title {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.main .container section img {
+  max-width: 200px;
+}
+
+.main .container section .cap {
+  font-weight: 600;
+  font-size: 27px;
+}
+
+.main .container section .content {
+  font-size: 18px;
+  color: rgba(0, 0, 0, .58);
+}
+
+.main .container section button {
+  font-size: 15px;
+  padding: 7px 15px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+}
+
+.main .container section div button:first-of-type {
+  border: 1px solid black;
+  margin-right: 13px;
+}
+
+.main .container section div button:first-of-type:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.main .container section div button:last-of-type {
+  color: white;
+  background-color: black;
+  font-weight: 600;
+}
+
+.main .container section div button:last-of-type:hover {
+  background-color: rgba(0, 0, 0, .7);
+  border-color: rgba(0, 0, 0, .7);
+}
+
+@media (max-width: 700px) {
+  .main {
+    padding-left: 15px;
+  }
+}

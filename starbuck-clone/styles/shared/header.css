@@ -4,8 +4,7 @@ header {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  padding: 0 30px;
-  margin-bottom: 3px;
+  padding: 0 35px;
 }
 
 header * {
@@ -92,6 +91,18 @@ header .responsive-header div {
 
 header .responsive-header div:hover {
   background-color: rgb(233, 233, 233);
+}
+
+@media (max-width: 700px) {
+  header {
+    height: 70px;
+    padding: 0 15px;
+  }
+
+  header .left-section svg {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 830px) {

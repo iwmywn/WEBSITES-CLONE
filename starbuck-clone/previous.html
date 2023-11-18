@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu</title>
+  <title>Previous</title>
   <link rel="stylesheet" href="styles/shared/general.css">
   <link rel="stylesheet" href="styles/shared/header.css">
   <link rel="stylesheet" href="styles/pages/menu/shared/header.css">
-  <link rel="stylesheet" href="styles/pages/menu/menu-header/main.css">
+  <link rel="stylesheet" href="styles/pages/menu/previous-favorites-header/main.css">
   <link rel="stylesheet" href="styles/pages/menu/shared/footer.css">
   <link rel="stylesheet" href="styles/shared/footer.css">
   <link rel="icon" href="icons/icon.webp" type="image/x-icon">
@@ -72,162 +72,24 @@
   </header>
 
   <div class="header">
-    <a class="current-header" href="menu.html">Menu</a>
+    <a href="menu.html">Menu</a>
     <a href="featured.html">Featured</a>
-    <a href="previous.html">Previous</a>
+    <a class="current-header" href="previous.html">Previous</a>
     <a href="favorites.html">Favorites</a>
   </div>
 
   <div class="main">
-    <div class="left-section-main">
-      <div class="category">
-        <span class="title">Drinks</span>
-        <span>Oleato™</span>
-        <span>Hot Coffees</span>
-        <span>Hot Teas</span>
-        <span>Hot Drinks</span>
-        <span>Frappuccino® Blended Beverages</span>
-        <span>Cold Coffees</span>
-        <span>Iced Teas</span>
-        <span>Cold Drinks</span>
-      </div>
-      <div class="category">
-        <span class="title">Food</span>
-        <span>Hot Breakfast</span>
-        <span>Oatmeal & Yogurt</span>
-        <span>Bakery</span>
-        <span>Lunch</span>
-        <span>Snacks & Sweets</span>
-      </div>
-      <div class="category">
-        <span class="title">At home coffee</span>
-        <span>Whole Bean</span>
-        <span>Ground</span>
-        <span>VIA® Instant</span>
-      </div>
-      <div class="category">
-        <span class="title">Merchandise</span>
-        <span>Cold Cups</span>
-        <span>Tumblers</span>
-        <span>Mugs</span>
-        <span>Other</span>
-      </div>
-    </div>
-    <div class="right-section-main">
-      <div class="title">Menu</div>
-      <div class="category">
-        <div class="title">Drinks</div>
-        <div class="product-container">
-          <div class="product">
-            <img src="images/drinks/oleato.avif" alt="product">
-            Oleato™
-          </div>
-          <div class="product">
-            <img src="images/drinks/hotcoffees.avif" alt="product">
-            Hot Coffees
-          </div>
-          <div class="product">
-            <img src="images/drinks/hotteas.avif" alt="product">
-            Hot Teas
-          </div>
-          <div class="product">
-            <img src="images/drinks/hotdrinks.avif" alt="product">
-            Hot Drinks
-          </div>
-          <div class="product">
-            <img src="images/drinks/frappuccino.avif" alt="product">
-            Frappuccino® Blended Beverages
-          </div>
-          <div class="product">
-            <img src="images/drinks/coldcoffees.avif" alt="product">
-            Cold Coffees
-          </div>
-          <div class="product">
-            <img src="images/drinks/icedtea.avif" alt="product">
-            Iced Teas
-          </div>
-          <div class="product">
-            <img src="images/drinks/colddrinks.avif" alt="product">
-            Cold Drinks
-          </div>
+    <div class="container">
+      <section>
+        <div class="title">Previous</div>
+        <img class="sb-imageFade__show" src="https://www.starbucks.com/weblx/images/moon-phases.gif" alt="Animated illustration shows phases of the moon">
+        <div class="cap">When history repeats itself</div>
+        <div class="content">Previous orders will appear here to quickly order again.</div>
+        <div>
+          <button>Sign in</button>
+          <button>Join now</button>
         </div>
-
-        <div class="title">Drinks</div>
-        <div class="product-container">
-          <div class="product">
-            <img src="images/food/hotbreakfast.avif" alt="product">
-            Hot Breakfast
-          </div>
-          <div class="product">
-            <img src="images/food/oatmeal-yogurt.avif" alt="product">
-            Oatmeal & Yogurt
-          </div>
-          <div class="product">
-            <img src="images/food/bakery.avif" alt="product">
-            Bakery
-          </div>
-          <div class="product">
-            <img src="images/food/lunch.avif" alt="product">
-            Lunch
-          </div>
-          <div class="product">
-            <img src="images/food/snacks-sweets.avif" alt="product">
-            Snacks & Sweets
-          </div>
-        </div>
-
-        <div class="title">At Home Coffee</div>
-        <div class="product-container">
-          <div class="product">
-            <img src="images/at-home-coffee/whole-bean.avif" alt="product">
-            Whole Bean
-          </div>
-          <div class="product">
-            <img src="images/at-home-coffee/ground.avif" alt="product">
-            Ground
-          </div>
-          <div class="product">
-            <img src="images/at-home-coffee/via-instant.avif" alt="product">
-            VIA® Instant
-          </div>
-        </div>
-
-        <div class="title">At Home Coffee</div>
-        <div class="product-container">
-          <div class="product">
-            <img src="images/at-home-coffee/whole-bean.avif" alt="product">
-            Whole Bean
-          </div>
-          <div class="product">
-            <img src="images/at-home-coffee/ground.avif" alt="product">
-            Ground
-          </div>
-          <div class="product">
-            <img src="images/at-home-coffee/via-instant.avif" alt="product">
-            VIA® Instant
-          </div>
-        </div>
-
-        <div class="title">Merchandise</div>
-        <div class="product-container">
-          <div class="product">
-            <img src="images/merchandise/cold-cups.avif" alt="product">
-            Cold Cups
-          </div>
-          <div class="product">
-            <img src="images/merchandise/tumbles.avif" alt="product">
-            Tumblers
-          </div>
-          <div class="product">
-            <img src="images/merchandise/mugs.avif" alt="product">
-            Mugs
-          </div>
-          <div class="product">
-            <img src="images/merchandise/other.avif" alt="product">
-            Other
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </div>
 

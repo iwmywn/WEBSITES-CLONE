@@ -8,6 +8,7 @@
   align-items: center;
   column-gap: 20px;
   font-size: 13px;
+  margin-top: 3px;
 }
 
 .header a {
@@ -22,16 +23,6 @@
 }
 
 @media (max-width: 700px) {
-  header {
-    height: 70px;
-    padding: 0 15px;
-  }
-
-  header .left-section svg {
-    width: 40px;
-    height: 40px;
-  }
-
   .header {
     padding-left: 15px;
   }
