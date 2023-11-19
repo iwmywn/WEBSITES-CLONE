@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 50px;
 }
 
@@ -87,6 +87,7 @@
   max-width: 1440px;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
+  padding: 0 35px;
 }
 
 .main .stars-rewards-container .bottom .grid-section {
@@ -96,11 +97,17 @@
   row-gap: 15px;
 }
 
+.main .stars-rewards-container .bottom .grid-section>div {
+  display: flex; 
+  flex-direction: column; 
+  row-gap: 15px;
+}
+
 .main .stars-rewards-container .bottom .grid-section img {
   margin: 0 auto;
 }
 
-.main .stars-rewards-container .bottom .grid-section>span:first-of-type {
+.main .stars-rewards-container .bottom .grid-section>div>span:first-of-type {
   font-size: 18px;
   font-weight: 600;
 }
@@ -119,7 +126,6 @@
   display: flex;
   flex-direction: column;
   background-color: rgb(241, 248, 245);
-  width: 100vw;
   height: 150px;
   align-items: center;
   justify-content: space-between;
@@ -221,7 +227,7 @@
 
 .main .earn-stars .bottom .section {
   display: grid;
-  grid-template-columns: 300px 1fr 1fr;
+  grid-template-columns: auto 1fr;
   column-gap: 50px;
 }
 
@@ -229,6 +235,11 @@
   font-size: 23px;
   font-weight: 600;
   margin-bottom: 10px;
+}
+
+.main .earn-stars .bottom .section section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .main .earn-stars .bottom .section .a-section { 
@@ -317,13 +328,16 @@
   flex-direction: column;
   row-gap: 25px;
   font-size: 15px;
-  max-width: 700px;
-  margin-left: -300px;
+  padding-left: 250px;
 }
 
 .main .questions-container>span:first-of-type {
   font-size: 27px;
   font-weight: bold;
+}
+
+.main .questions-container>span:last-of-type {
+  max-width: 700px;
 }
 
 .main .other-container {
@@ -361,9 +375,92 @@
   color: rgba(0, 0, 0, .58);
 }
 
-
-/* @media (max-width: 840px) {
-  .main .free-coffee-container {
-    background-position: 50% top;
+@media (max-width: 1200px) {
+  .main .rewards-coming-container {
+    background: none;
   }
-} */
+
+  .main .rewards-coming-container .rewards-coming {
+    width: 100%;
+  }
+
+  .main .rewards-coming-container .rewards-coming .left-star {
+    background-image: url(https://www.starbucks.com/app-assets/c7d010ad5c5f6c00d5446d2f8c652c42.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  .main .rewards-coming-container .rewards-coming .right-star {
+    background-image: url(https://www.starbucks.com/app-assets/c87d1677e476d2d20e5f114e5068d2cd.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+}
+
+@media (max-width: 1100px) {
+  .main .earn-stars .bottom .section {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .main .stars-rewards-container .bottom {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .main .stars-rewards-container .bottom .grid-section {
+    grid-template-columns: auto 1fr;
+    max-width: none;
+    column-gap: 20px;
+  }
+
+  .main .stars-rewards-container .bottom .grid-section>div {
+    row-gap: 15px;
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+
+@media (max-width: 950px) {
+  .main .questions-container {
+    padding-left: 35px;
+  }
+}
+
+@media (max-width: 840px) {
+  .main .free-coffee-container {
+    background-image: url(https://www.starbucks.com/weblx/images/rewards/hero/hero-mobile_2021.jpg);
+    background-position: bottom;
+    background-size: cover;
+  }
+
+  .main .free-coffee-container {
+    align-items: normal;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  .main .free-coffee-container .free-coffee {
+    align-items: center;
+    text-align: center;
+    row-gap: 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .main .product-favorites-container {
+    flex-direction: column;
+  }
+
+  .main .earn-stars .bottom .section section {
+    grid-template-columns: 1fr;
+  }
+
+  .main .other-container .bottom {
+    grid-template-columns: 1fr;
+  }
+}
