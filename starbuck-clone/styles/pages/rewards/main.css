@@ -1,0 +1,369 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.main .free-coffee-container {
+  display: flex;
+  align-items: center;
+  padding: 0 35px;
+  width: 100vw;
+  background-image: url(https://starbucks.com/weblx/images/rewards/hero/xl-hero-desktop_2021.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 50%;
+  height: 810px;
+}
+
+.main .free-coffee-container .free-coffee {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 350px;
+  row-gap: 30px;
+}
+
+.main .free-coffee-container .free-coffee .title {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.main .free-coffee-container .free-coffee .title {
+  font-size: 35px;
+}
+
+.main .free-coffee-container .free-coffee .content {
+  font-size: 18px;
+}
+
+.main .free-coffee-container .free-coffee .content span:hover {
+  text-decoration: none !important;
+}
+
+.main .free-coffee-container .free-coffee button {
+  border: none;
+  background-color: rgb(0, 117, 74);
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 8px 15px;
+  border-radius: 9999px;
+  margin-top: 10px;
+}
+
+.main .free-coffee-container .free-coffee button:hover {
+  opacity: 0.95;
+}
+
+.main .stars-rewards-container,
+.main .stars-rewards-container .top {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.main .stars-rewards-container {
+  margin: 100px 0;
+  row-gap: 50px;
+}
+
+.main .stars-rewards-container .top span:first-of-type {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.main .stars-rewards-container .top span:last-of-type {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main .stars-rewards-container .bottom {
+  display: grid;
+  max-width: 1440px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+.main .stars-rewards-container .bottom .grid-section {
+  display: grid;
+  max-width: 400px;
+  grid-template-columns: 1fr;
+  row-gap: 15px;
+}
+
+.main .stars-rewards-container .bottom .grid-section img {
+  margin: 0 auto;
+}
+
+.main .stars-rewards-container .bottom .grid-section>span:first-of-type {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #006241;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.main .favorites-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(241, 248, 245);
+  width: 100vw;
+  height: 150px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.main .favorites-container .title {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.main .favorites-container .stars-container {
+  display: flex;
+}
+
+.main .favorites-container .stars-container div {
+  font-size: 23px;
+  font-weight: 600;
+  width: 100px;
+  height: 50px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main .favorites-container .stars-container .current-choose {
+  box-shadow: inset 0 -3px rgb(0, 117, 74); 
+}
+
+.main .favorites-container .stars-container span {
+  font-size: 15px;
+  color: #cba258;
+}
+
+.main .product-favorites-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 50px;
+  background-color: rgb(212, 233, 226);
+  width: 100vw;
+  padding: 25px 0;
+}
+
+.main .product-favorites-container img {
+  max-width: 375px;
+  object-fit: contain;
+}
+
+.main .product-favorites-container .content {
+  max-width: 280px;
+}
+
+.main .product-favorites-container .content p:first-of-type { 
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.main .product-favorites-container .content p:last-of-type { 
+  font-size: 15px;
+}
+
+.main .earn-stars {
+  padding: 40px 35px;
+  background-color: #f2f0eb;
+  font-size: 16px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 60px;
+}
+
+.main .earn-stars .top {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  text-align: center;
+}
+
+.main .earn-stars .top .title{
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.main .earn-stars .top .content {
+  font-size: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main .earn-stars .bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .earn-stars .bottom .section {
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr;
+  column-gap: 50px;
+}
+
+.main .earn-stars .bottom .section .title p:first-of-type{
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main .earn-stars .bottom .section .a-section { 
+  max-width: 450px;
+  display: flex;
+  column-gap: 20px;
+}
+
+.main .earn-stars .bottom .section .a-section div p:first-of-type { 
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.main .rewards-coming-container {
+  background-image: url(https://www.starbucks.com/app-assets/844262945b2a8b8cfb293156e2583872.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .rewards-coming-container .rewards-coming {
+  height: 90%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(212, 233, 226);
+}
+
+.main .rewards-coming-container .rewards-coming .left-star {
+  background-image: url(https://www.starbucks.com/app-assets/7997fb008f368630d3ca3c1194fd8404.svg);
+  background-size: cover;
+  height: 500px;
+  width: 300px;
+}
+
+.main .rewards-coming-container .rewards-coming .content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  font-size: 15px;
+  max-width: 600px;
+  align-items: center;
+}
+
+.main .rewards-coming-container .rewards-coming .content>span:first-of-type {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.main .rewards-coming-container .rewards-coming .content img {
+  margin: 0 auto;
+}
+
+.main .rewards-coming-container .rewards-coming .content button {
+  padding: 10px 17px;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  background-color: #00754A;
+}
+
+.main .rewards-coming-container .rewards-coming .content button:hover {
+  opacity: 0.95;
+}
+
+.main .rewards-coming-container .rewards-coming .right-star {
+  background-image: url(https://www.starbucks.com/app-assets/b7e1b20df72e802cb1cf0e97e8fe21d0.svg);
+  background-size: cover;
+  height: 500px;
+  width: 300px;
+}
+
+.main .questions-container {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 25px;
+  font-size: 15px;
+  max-width: 700px;
+  margin-left: -300px;
+}
+
+.main .questions-container>span:first-of-type {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.main .other-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 40px 35px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+.main .other-container .top p {
+  margin-bottom: 10px;
+}
+
+.main .other-container .bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  margin-top: 10px;
+}
+
+.main .other-container .bottom .left,
+.main .other-container .bottom .right,
+.main .other-container .bottom .left>div,
+.main .other-container .bottom .right>div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.main .other-container .bottom .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(0, 0, 0, .58);
+}
+
+
+/* @media (max-width: 840px) {
+  .main .free-coffee-container {
+    background-position: 50% top;
+  }
+} */
