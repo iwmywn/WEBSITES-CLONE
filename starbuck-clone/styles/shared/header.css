@@ -22,6 +22,7 @@ header .right-section {
 
 header .left-section {
   text-transform: uppercase;
+  font-weight: bold;
   height: 100%;
 }
 
