@@ -1,0 +1,200 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.main>*{
+  padding: 0 35px;
+  margin-bottom: 40px;
+}
+
+.main section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.main section .title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main section .card-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 20px;
+}
+
+.main .card-section .card {
+  cursor: pointer;
+}
+
+.main .card-section .card img {
+  max-width: 300px;
+  border-radius: 15px;
+  /* animation: moveUp 3s ; */
+}
+
+/* @keyframes moveUp {
+  from {
+    transform: translateY(5px);
+  }
+
+  to {
+
+  }
+} */
+
+.main .received {
+  display: flex;
+  align-items: center; 
+  column-gap: 20px;
+  height: 150px;
+  background-color: rgb(212, 233, 226);
+  padding-bottom: 25px;
+}
+
+.main .received span:first-of-type {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.main .received span:nth-child(2) {
+  font-size: 18px;
+  color: rgba(0, 0, 0, .58);
+}
+
+.main .received button {
+  padding: 8px 15px;
+  border-radius: 9999px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.main .received button:first-of-type {
+  border: 1px solid black;
+}
+
+.main .received button:first-of-type:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.main .received button:last-of-type {
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.main .received button:last-of-type:hover {
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.main .received span:last-of-type {
+  color: #006241;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+.main .received svg {
+  vertical-align: middle;
+}
+
+.main .gift-container {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  background-color: #f9f9f9;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.main .gift-container .gift-pic img {
+  max-width: 375px;
+  object-fit: contain;
+}
+
+.main .gift-container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 15px;
+  max-width: 375px;
+}
+
+.main .gift-container .content .title {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.main .gift-container .content .cap {
+  font-size: 15px;
+  color: rgba(0, 0, 0, .58);
+}
+
+.main .gift-container .content button {
+  padding: 7px 14px;
+  border-radius: 9999px;
+  border: 1px solid black;
+  font-weight: 600;
+}
+
+.main .gift-container .content button:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.main .gift-card-support {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-size: 15px;
+  background-color: #edebe9;
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+
+.main .gift-card-support .title {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.main .gift-card-support .content {
+  max-width: 400px;
+}
+
+.main .gift-card-support div button {
+  margin-right: 15px;
+  padding: 7px 14px;
+  border: 1px solid black;
+  border-radius: 9999px;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.main .gift-card-support div button:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 1500px) {
+  
+}
+
+@media (max-width: 1300px) {
+
+}
+
+@media (max-width: 1100px) {
+
+}
+
+@media (max-width: 700px) {
+
+}
