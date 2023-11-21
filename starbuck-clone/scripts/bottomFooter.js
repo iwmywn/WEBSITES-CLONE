@@ -1,4 +1,4 @@
-import bottomFooterContent from "../data/footer/bottomFooterContent.js";
+import bottomFooterContent from "../data/footer/bottom.js";
 
 export default function renderBottomFooter() {
   let htmlBottomFooter = '';

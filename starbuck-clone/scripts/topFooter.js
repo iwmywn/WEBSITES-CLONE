@@ -1,4 +1,4 @@
-import topFooterContent from "../data/footer/topFooterContent.js";
+import topFooterContent from "../data/footer/top.js";
 
 export default function renderTopFooter() {
   let htmlTopFooter = '';
