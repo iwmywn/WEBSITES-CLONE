@@ -40,6 +40,11 @@ footer .top-footer .section>div:not(:first-child):hover {
   color: black;
 }
 
+footer .section>img {
+  display: none;
+  cursor: pointer;
+}
+
 footer .top-footer .footer-title {
   font-size: 19px;
   font-weight: 600;
@@ -90,6 +95,10 @@ footer .bottom-footer .other-options div:nth-child(odd):hover {
   text-decoration: underline;
 }
 
+footer .bottom-footer .copyright {
+  font-size: 14px;
+}
+
 @media (max-width: 1025px) {
   footer .top-footer {
     flex-direction: column;
@@ -107,8 +116,8 @@ footer .bottom-footer .other-options div:nth-child(odd):hover {
     display: none;
   }
 
-  footer .section>svg {
-    display: block !important;
+  footer .section>img {
+    display: initial;
   }
 
   footer .bottom-footer .other-options {

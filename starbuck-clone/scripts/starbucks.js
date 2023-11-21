@@ -1,6 +1,8 @@
 import primaryContent from "../data/home/primaryContent.js";
 import noteContent from "../data/home/noteContent.js";
 import colorContent from "../data/home/colorContent.js";
+import renderTopFooter from "./topFooter.js";
+import renderBottomFooter from "./bottomFooter.js";
 
 let htmlPrimaryContent = '';
 primaryContent.forEach((primaryItem) => {
@@ -63,3 +65,6 @@ function reverse() {
         sectionItem.classList.add('row-reverse');
     });
 }
+
+renderTopFooter();
+renderBottomFooter();
