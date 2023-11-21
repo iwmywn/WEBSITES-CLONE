@@ -1,7 +1,7 @@
 import renderPrimaryContent from "./primaryContent.js";
-import renderTopFooter from "./topFooter.js";
-import renderBottomFooter from "./bottomFooter.js";
-import renderHeader from "./header.js";
+import renderTopFooter from "../shared/topFooter.js";
+import renderBottomFooter from "../shared/bottomFooter.js";
+import renderHeader from "../shared/header.js";
 
 renderHeader();
 renderPrimaryContent();
