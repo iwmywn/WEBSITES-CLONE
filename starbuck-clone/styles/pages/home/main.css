@@ -34,6 +34,24 @@ main .right {
   text-align: center;
 }
 
+main .right .small-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main .right .small-content {
+  font-size: 19px;
+}
+
+main .right .big-title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+main .right .big-content {
+  font-size: 24px;
+}
+
 main .right .access-button {
   padding: 8px 13px;
   border: 1px solid white;
@@ -45,6 +63,13 @@ main .right .access-button {
 
 main .right .access-button:hover {
   background-color: rgba(0, 0, 0, .2);
+}
+
+main .right .more {
+  font-size: 14px;
+  max-width: max-content;
+  text-align: center;
+  margin: 0 200px;
 }
 
 main .rewards {
