@@ -12,6 +12,10 @@ main section {
   display: flex;
 }
 
+main section.row-reverse {
+  flex-direction: row-reverse;
+}
+
 main .left,
 main .right {
   max-width: 50%;
@@ -65,7 +69,7 @@ main .right .access-button:hover {
   background-color: rgba(0, 0, 0, .2);
 }
 
-main .right .more {
+main .note {
   font-size: 14px;
   max-width: max-content;
   text-align: center;
@@ -82,31 +86,28 @@ main .rewards:hover {
 }
 
 @media (max-width: 1000px) {
-  main>section:not(:first-child) .right>div:first-child {
-    font-size: 28px !important;
+  main>section:not(:first-child) .right .big-title {
+    font-size: 28px;
   }
 }
 
 @media (max-width: 800px) {
-  main>section:nth-child(even) {
-    flex-direction: column-reverse;
+
+  main>section:first-child .right .small-title,
+  main>section:not(:first-child) .right .big-content {
+    font-size: 22px;
   }
 
-  main>section:first-child .right>div:first-child,
-  main>section:not(:first-child) .right>div:nth-child(2) {
-    font-size: 22px !important;
+  main>section:first-child .right .small-content {
+    font-size: 16px;
   }
 
-  main>section:first-child .right>div:nth-child(2) {
-    font-size: 16px !important;
+  main>section .right .access-button {
+    font-size: 14px;
   }
 
-  main>section:first-child .right>div:last-child,
-  main>section:not(:first-child) .right>div:last-child {
-    font-size: 14px !important;
-  }
-
-  main section {
+  main section,
+  main section.row-reverse {
     flex-direction: column;
   }
 
