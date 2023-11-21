@@ -1,7 +1,6 @@
 main {
     display: flex;
     column-gap: 30px;
-    overflow-y: hidden;
 }
 
 .home-box-2 div,
