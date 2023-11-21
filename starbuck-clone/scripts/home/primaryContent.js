@@ -1,6 +1,6 @@
-import primaryContent from "../data/home/primary.js";
-import noteContent from "../data/home/note.js";
-import colorContent from "../data/home/color.js";
+import primaryContent from "../../data/home/primary.js";
+import noteContent from "../../data/home/note.js";
+import colorContent from "../../data/home/color.js";
 
 export default function renderPrimaryContent() {
   let htmlPrimaryContent = '';
