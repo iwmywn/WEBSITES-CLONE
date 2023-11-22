@@ -1,21 +1,21 @@
 const products = [{
   id: "1",
   title: "Drinks",
-  "image-list": [
-    {
-      title: "Oleato™",
-      oleato: [{
-        name: "Oleato™",
-        image: [
-          "https://globalassets.starbucks.com/digitalassets/products/bev/OleatoGingerbreadLatte.jpg?impolicy=1by1_wide_topcrop_630",
-          "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_GoldenFoam_ColdBrew.jpg?impolicy=1by1_wide_topcrop_630",
-          "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_CaffeLatte.jpg?impolicy=1by1_wide_topcrop_630",
-          "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_ToffeeNut_ShakenEspresso.jpg?impolicy=1by1_wide_topcrop_630",
-          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20230406_1723_IcedChaiTeaLatte-GoldenFoam-onGray_sRGB-1800.jpg?impolicy=1by1_wide_topcrop_630",
-          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211029_7356_IcedMatchaTeaLatte-GoldenFoam-onGray_sRGB-1800.jpg?impolicy=1by1_wide_topcrop_630",
-          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20221014_4603_ParadiseDrink-GoldenFoam-onGray_sRGB-1800.jpg?impolicy=1by1_wide_topcrop_630",
-          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20221014_4538_DragonDrink-GoldenColdFoam-onGray_sRGB-1800.jpg?impolicy=1by1_wide_topcrop_630"
-        ]
+  "image-list": [{
+    title: "Oleato™",
+    oleato: [{
+      name: "Oleato™",
+      image: [
+
+        "https://globalassets.starbucks.com/digitalassets/products/bev/OleatoGingerbreadLatte.jpg?impolicy=1by1_wide_topcrop_630",
+        "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_GoldenFoam_ColdBrew.jpg?impolicy=1by1_wide_topcrop_630",
+        "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_CaffeLatte.jpg?impolicy=1by1_wide_topcrop_630",
+        "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_ToffeeNut_ShakenEspresso.jpg?impolicy=1by1_wide_topcrop_630",
+        "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20230406_1723_IcedChaiTeaLatte-GoldenFoam-onGray_sRGB-1800.jpg?impolicy=1by1_wide_topcrop_630",
+        "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211029_7356_IcedMatchaTeaLatte-GoldenFoam-onGray_sRGB-1800.jpg?impolicy=1by1_wide_topcrop_630",
+        "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20221014_4603_ParadiseDrink-GoldenFoam-onGray_sRGB-1800.jpg?impolicy=1by1_wide_topcrop_630",
+        "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20221014_4538_DragonDrink-GoldenColdFoam-onGray_sRGB-1800.jpg?impolicy=1by1_wide_topcrop_630"
+      ]
       }]
     },
     {
@@ -70,20 +70,65 @@ const products = [{
           "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_CaffeLatte.jpg?impolicy=1by1_wide_topcrop_630",
           "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_CaffeLatte.jpg?impolicy=1by1_wide_topcrop_630",
           "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_CinnamonDolceLatte.jpg?impolicy=1by1_wide_topcrop_630",
-          // miss
-          "",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617%20ReserveLatte.jpg?impolicy=1by1_wide_topcrop_630",
           "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_ReserveHazelnutBiancoLatte.jpg?impolicy=1by1_wide_topcrop_630",
           "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_CaffeLatte.jpg?impolicy=1by1_wide_topcrop_630"
+        ]
+      }, {
+        name: "Macchiatos",
+        image: [
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220411_AppleCrispOatmilkMacchiato.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211029_CaramelMacchiato.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_EspressoMacchiato.jpg?impolicy=1by1_wide_topcrop_630"
+        ]
+      }, {
+        name: "Mochas",
+        image: [
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220607_1480_PeppermintMocha-onGreen-MOP_1800.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190716_PeppermintWhiteChocolateMocha.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220607_CaffeMocha.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/ReserveDarkChocolateMocha.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_WhiteChocolateMocha.jpg?impolicy=1by1_wide_topcrop_630"
+        ]
+      }, {
+        name: "Coffee Travelers",
+        image: [
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20191031_CoffeeTraveler.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20191031_CoffeeTraveler.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20191031_CoffeeTraveler.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20191031_CoffeeTraveler.jpg?impolicy=1by1_wide_topcrop_630"
         ]
       }]
     },
     {
-      hotteas: {
-        name: "Hot Teas",
+      title: "Hot Teas",
+      hotteas: [{
+        name: "Chai Teas",
         image: [
-          "images/drinks/hotteas.avif"
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20230612_6244_GingerbreadOatmilkChai-onGreen-MOP_1800.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220411_ChaiLatte.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190628%20ChaiBrewedTea.jpg?impolicy=1by1_wide_topcrop_630"
         ]
-      }
+      }, {
+        name: "Black Teas",
+        image: [
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190624_EarlGreyBlackTea.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190624_LondonFogTeaLatte.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190624%20RoyalEnglishBreakfastBlackTea.jpg?impolicy=1by1_wide_topcrop_630"
+        ]
+      }, {
+        name: "Green Teas",
+        image: [
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190624%20EmperorsCloudAndMistGreenTea.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211115_MatchaTeaLatte.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190628%20HoneyCitrusMintTea.jpg?impolicy=1by1_wide_topcrop_630"
+        ]
+      }, {
+        name: "Herbal Teas",
+        image: [
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190624_%20MintMajestyHerbalTea.jpg?impolicy=1by1_wide_topcrop_630"
+        ]
+      }]
     },
     {
       hotdrinks: {
