@@ -7,8 +7,8 @@ const favoritesContent = [{
   cap: "Save your favorite mixes",
   content: "Use the heart to save customizations. Your favorites will appear here to order again.",
   button: [
-    "sign in",
-    "join now"
+    "Sign in",
+    "Join now"
   ]
 }];
 
