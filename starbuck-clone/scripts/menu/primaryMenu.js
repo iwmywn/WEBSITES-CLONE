@@ -5,9 +5,16 @@ export default function renderPrimaryMenu() {
   let htmlPrimaryMenuRight = '';
   productsOverview.forEach((productItem) => {
     let htmlProductName = '';
+    let htmlProductInfo = '';
     for (let i = 0; i < productItem.sections.length; i++) {
       const product = productItem.sections[i];
       htmlProductName += `<span>${product.name}</span>`;
+      htmlProductInfo += `
+        <div class="product">
+          <img src="${product.image}" alt="${product.name}">
+          ${product.name}
+        </div>
+      `;
     }
     htmlPrimaryMenuLeft += (`
       <div class="category">
@@ -16,16 +23,6 @@ export default function renderPrimaryMenu() {
         + '</div>'
     );
 
-    let htmlProductInfo = '';
-    for (let i = 0; i < productItem.sections.length; i++) {
-      const product = productItem.sections[i];
-      htmlProductInfo += `
-        <div class="product">
-          <img src="${product.image}" alt="${product.name}">
-          ${product.name}
-        </div>
-      `;
-    }
     htmlPrimaryMenuRight += (`
       <div class="title">${productItem.title}</div>
       <div class="product-container">`
