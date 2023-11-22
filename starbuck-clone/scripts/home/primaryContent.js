@@ -1,6 +1,7 @@
 import primaryContent from "../../data/home/primary.js";
 import noteContent from "../../data/home/note.js";
 import colorContent from "../../data/home/color.js";
+import setBColor from "../utils/setBackColor.js";
 
 export default function renderPrimaryContent() {
   let htmlPrimaryContent = '';
@@ -26,21 +27,10 @@ export default function renderPrimaryContent() {
   document.getElementById('main')
     .innerHTML = htmlPrimaryContent;
   
-  setBColor();
+  setBColor('section', colorContent);
   setSize('title');
   setSize('content');
   reverse();
-  
-  function setBColor() {
-    document.querySelectorAll('.js-section')
-      .forEach((sectionItem) => {
-        const { id } = sectionItem.dataset;
-        colorContent.forEach((colorItem) => {
-          if (id === colorItem.id)
-            sectionItem.style.backgroundColor = colorItem.bColor;
-        });
-      });
-  }
   
   function setSize(name) {
     document.querySelectorAll(`.js-size-${name}`)
