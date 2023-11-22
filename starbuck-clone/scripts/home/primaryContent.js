@@ -5,7 +5,7 @@ export default function renderPrimaryContent() {
   let htmlPrimaryContent = '';
   primaryContent.forEach((primaryItem) => {
     htmlPrimaryContent += `
-      <section data-reverse="${primaryItem.reverse}" style="background-color: ${primaryItem.bColor}">
+      <section class="js-section" data-reverse="${primaryItem.reverse}" style="background-color: ${primaryItem.bColor}">
         <div class="left">
           <img
             alt="${primaryItem.image.alt}"
