@@ -1,12 +1,10 @@
-import primaryFeatured from "../../data/featured/primaryFeatured.js";
-import setBColor from "../utils/setBackColor.js";
-import color from "../../data/featured/color.js";
+import primaryContent from "../../data/featured/primary.js";
 
 export default function renderPrimaryContent() {
   let htmlPrimaryFeatured = '';
-  primaryFeatured.forEach((primaryItem) => {
+  primaryContent.forEach((primaryItem) => {
     htmlPrimaryFeatured += `
-      <div class="js-product-container product-container" data-id=${primaryItem.id}>
+      <div class="product-container" style="background-color: ${primaryItem.bColor}">
         <div class="top">
           <img alt="${primaryItem.image.alt}" class="block"
             src="${primaryItem.image.src}">
@@ -22,6 +20,4 @@ export default function renderPrimaryContent() {
 
   document.querySelector('.js-section')
     .innerHTML = htmlPrimaryFeatured;
-
-  setBColor('product-container', color);
 }

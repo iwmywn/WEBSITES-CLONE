@@ -35,7 +35,45 @@ const products = [{
           "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_DecafPikePlaceRoast.jpg?impolicy=1by1_wide_topcrop_630",
           "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_BlondeRoast.jpg?impolicy=1by1_wide_topcrop_630",
           "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_BlondeRoast.jpg?impolicy=1by1_wide_topcrop_630",
-          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_BlondeRoast.jpg?impolicy=1by1_wide_topcrop_630"
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_BlondeRoast.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_CaffeMisto.jpg?impolicy=",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_PikePlaceRoast.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_BlondeRoast.jpg?impolicy=",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX23-721653_MalawiSableFarms_2023_WBReserve_Card.jpg?impolicy=",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX22-507317_VietnamDalat_2023_WBReserve_Card.jpg?impolicy="
+        ]
+      }, {
+        name: "Cappuccinos",
+        image: [
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_Cappuccino.jpg?impolicy=1by1_wide_topcrop_630"
+        ]
+      }, {
+        name: "Espresso Shots",
+        image: [
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_Espresso_Single.jpg?impolicy=",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_EspressoConPanna.jpg?impolicy="
+        ]
+      }, {
+        name: "Flat Whites",
+        image: [
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20230406_FlatWhite.jpg?impolicy=",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20230406_HoneyAlmondmilkFlatWhite.jpg?impolicy="
+        ]
+      }, {
+        name: "Lattes",
+        image: [
+          "https://globalassets.starbucks.com/digitalassets/products/bev/GingerbreadLatte.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220607_1549_SugarCookieOatLatte-CAN-onGreen-MOP_1800.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220607_1401_CaramelBruleeLatte-onGreen-MOP_1800.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/ChestnutPralineLatte-onGreen.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220411_PumpkinSpiceLatte.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_CaffeLatte.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_CaffeLatte.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_CinnamonDolceLatte.jpg?impolicy=1by1_wide_topcrop_630",
+          // miss
+          "",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_ReserveHazelnutBiancoLatte.jpg?impolicy=1by1_wide_topcrop_630",
+          "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_CaffeLatte.jpg?impolicy=1by1_wide_topcrop_630"
         ]
       }]
     },

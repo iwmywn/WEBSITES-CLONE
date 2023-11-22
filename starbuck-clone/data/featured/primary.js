@@ -1,4 +1,4 @@
-const primaryFeatured = [{
+const primaryContent = [{
   id: "1",
   image: {
     alt: "Hot espresso drink with whipped cream and chocolate curls in a holiday-themed to-go cup.",
@@ -6,7 +6,8 @@ const primaryFeatured = [{
   },
   title: "Peppermint Mocha",
   des: "Espresso, steamed milk, mocha sauce and peppermint-flavored syrup with whipped cream and dark-chocolate curls.",
-  "access-button": "Order now"
+  "access-button": "Order now",
+  bColor: "#006241"
 }, {
   id: "2",
   image: {
@@ -15,7 +16,8 @@ const primaryFeatured = [{
   },
   title: "Caramel Brulée Latte",
   des: "A combination of espresso, steamed milk and caramel brulée sauce, finished with whipped cream and a caramel brulée topping.",
-  "access-button": "Order now"
+  "access-button": "Order now",
+  bColor: "#006241"
 }, {
   id: "3",
   image: {
@@ -24,7 +26,8 @@ const primaryFeatured = [{
   },
   title: "New Iced Gingerbread Oatmilk Chai",
   des: "Our spiced chai tea blend is paired with gingerbread-flavored syrup and creamy oatmilk on ice.",
-  "access-button": "Order now"
+  "access-button": "Order now",
+  bColor: "#b37697"
 }, {
   id: "4",
   image: {
@@ -33,7 +36,8 @@ const primaryFeatured = [{
   },
   title: "Starbucks® Christmas Blend 2023",
   des: "Dark-roast coffee with rare aged Sumatran beans and notes of spiced chocolate and spruce tips.",
-  "access-button": "Order now"
+  "access-button": "Order now",
+  bColor: "#b37697"
 }, {
   id: "5",
   image: {
@@ -42,7 +46,8 @@ const primaryFeatured = [{
   },
   title: "Iced Sugar Cookie Almondmilk Latte",
   des: "Starbucks® Blonde espresso, sugar cookie flavors and almondmilk on ice with red and green sprinkles.",
-  "access-button": "Order now"
+  "access-button": "Order now",
+  bColor: "#dc0032"
 }, {
   id: "6",
   image: {
@@ -51,7 +56,8 @@ const primaryFeatured = [{
   },
   title: "Snowman Cookie",
   des: "A shortbread cookie with white-chocolaty icing, sweetly decorated with earmuffs and a scarf.",
-  "access-button": "Order now"
+  "access-button": "Order now",
+  bColor: "#dc0032"
 }, {
   id: "7",
   image: {
@@ -60,7 +66,8 @@ const primaryFeatured = [{
   },
   title: "Peppermint Mocha Frappuccino® blended beverage",
   des: "A blend of coffee, milk, ice, mocha sauce and peppermint-flavored syrup with whipped cream and dark-chocolate curls.",
-  "access-button": "Order now"
+  "access-button": "Order now",
+  bColor: "#ad96dc"
 }, {
   id: "8",
   image: {
@@ -69,7 +76,8 @@ const primaryFeatured = [{
   },
   title: "Signature Hot Chocolate",
   des: "Steamed milk and chocolaty syrup, finished with whipped cream and chocolaty drizzle.",
-  "access-button": "Order now"
+  "access-button": "Order now",
+  bColor: "#ad96dc"
 }, {
   id: "9",
   image: {
@@ -78,7 +86,8 @@ const primaryFeatured = [{
   },
   title: "Gingerbread Loaf",
   des: "Spiced loaf with ginger, cinnamon, cloves and citrusy icing.",
-  "access-button": "Order now"
+  "access-button": "Order now",
+  bColor: "#76232f"
 }, {
   id: "10",
   image: {
@@ -87,7 +96,8 @@ const primaryFeatured = [{
   },
   title: "Peppermint Brownie Cake Pop",
   des: "Chocolate-peppermint cake, icing and a sprinkle of candy cane pieces.",
-  "access-button": "Order now"
+  "access-button": "Order now",
+  bColor: "#76232f"
 }];
 
-export default primaryFeatured;
+export default primaryContent;

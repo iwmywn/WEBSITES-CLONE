@@ -8,7 +8,8 @@ const primaryContent = [{
   content: "Make the season even brighter when you join Starbucks® Rewards. You’ll save time with easy mobile ordering and earn free favorites.*",
   "access-button": "Join for free",
   size: "small",
-  reverse: "no"
+  reverse: "no",
+  bColor: "#ef3340"
 }, {
   id: "2",
   image: {
@@ -19,7 +20,8 @@ const primaryContent = [{
   content: "Your holi-yay favorites are here. Pick up a Peppermint Mocha, Iced Sugar Cookie Almondmilk Latte or Caramel Brulée Latte.",
   "access-button": "Find your favourie",
   size: "big",
-  reverse: "yes"
+  reverse: "yes",
+  bColor: "#006241"
 }, {
   id: "3",
   image: {
@@ -30,7 +32,8 @@ const primaryContent = [{
   content: "Say hello to the festive new Iced Gingerbread Oatmilk Chai. It's the beloved flavor of gingerbread with a twist. Here for a limited time.",
   "access-button": "Order now",
   size: "big",
-  reverse: "no"
+  reverse: "no",
+  bColor: "#b37697"
 }, {
   id: "4",
   image: {
@@ -41,7 +44,8 @@ const primaryContent = [{
   content: "Our Gingerbread Loaf with citrusy icing pairs deliciously with coffee.",
   "access-button": "Order now",
   size: "big",
-  reverse: "yes"
+  reverse: "yes",
+  bColor: "#76232f"
 }, {
   id: "5",
   image: {
@@ -52,7 +56,8 @@ const primaryContent = [{
   content: "The blends you love are back, including Starbucks® Christmas Blend 2023 with rare aged Sumatra.",
   "access-button": "Order now",
   size: "big",
-  reverse: "no"
+  reverse: "no",
+  bColor: "#1e3932"
 }];
 
 export default primaryContent;

@@ -1,13 +1,11 @@
 import primaryContent from "../../data/home/primary.js";
 import noteContent from "../../data/home/note.js";
-import colorContent from "../../data/home/color.js";
-import setBColor from "../utils/setBackColor.js";
 
 export default function renderPrimaryContent() {
   let htmlPrimaryContent = '';
   primaryContent.forEach((primaryItem) => {
     htmlPrimaryContent += `
-      <section class="js-section" data-id="${primaryItem.id}" data-reverse="${primaryItem.reverse}">
+      <section data-reverse="${primaryItem.reverse}" style="background-color: ${primaryItem.bColor}">
         <div class="left">
           <img
             alt="${primaryItem.image.alt}"
@@ -27,7 +25,6 @@ export default function renderPrimaryContent() {
   document.getElementById('main')
     .innerHTML = htmlPrimaryContent;
   
-  setBColor('section', colorContent);
   setSize('title');
   setSize('content');
   reverse();
