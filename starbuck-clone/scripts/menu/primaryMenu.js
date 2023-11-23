@@ -11,7 +11,9 @@ export default function renderPrimaryMenu() {
       htmlProductName += `<span>${product.name}</span>`;
       htmlProductInfo += `
         <div class="product">
-          <img src="${product.image}" alt="${product.name}">
+          <div>
+            <img src="${product.image}" alt="${product.name}">
+          </div>
           ${product.name}
         </div>
       `;
