@@ -19,8 +19,7 @@ const topFooterContent = [{
     "College Achievement",
     "Alumni Community",
     "U.S. Careers",
-    "International Careers",
-    ""
+    "International Careers"
   ]
 }, {
   id: "3",
@@ -28,11 +27,7 @@ const topFooterContent = [{
   sections: [
     "People",
     "Planet",
-    "Environmental and Social Impact Reporting",
-    "",
-    "",
-    "",
-    ""
+    "Environmental and Social Impact Reporting"
   ]
 }, {
   id: "4",
@@ -41,10 +36,7 @@ const topFooterContent = [{
     "Landlord Support Center",
     "Suppliers",
     "Corporate Gift Card Sales",
-    "Office and Foodservice Coffee",
-    "",
-    "",
-    ""
+    "Office and Foodservice Coffee"
   ]
 }, {
   id: "5",
@@ -54,9 +46,7 @@ const topFooterContent = [{
     "Order on the Web",
     "Delivery",
     "Order and Pick Up Option",
-    "Explore and Find Coffee for Home",
-    "",
-    ""
+    "Explore and Find Coffee for Home"
   ]
 }];
 
