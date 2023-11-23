@@ -47,8 +47,8 @@
 }
 
 .main .right-section-main img {
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   object-fit: contain;
 }
 
@@ -105,8 +105,8 @@
   }
 
   .main .right-section-main img {
-    width: 105px;
-    height: 105px;
+    width: 95px;
+    height: 95px;
   }
 }
 
