@@ -99,9 +99,14 @@
     margin-right: 10px;
   }
 
-  .main .right-section-main img {
+  .main .right-section-main .category .product>div {
     width: 72px;
-    height: 72px;
+    height: 72px; 
+  }
+
+  .main .right-section-main img {
+    width: 105px;
+    height: 105px;
   }
 }
 
