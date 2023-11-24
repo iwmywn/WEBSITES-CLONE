@@ -21,8 +21,8 @@ export default function renderPrimaryMenu() {
     htmlPrimaryMenuLeft += (`
       <div class="category">
         <span class="title">${productItem.title}</span>`
-        + htmlProductName
-        + '</div>'
+      + htmlProductName
+      + '</div>'
     );
 
     htmlPrimaryMenuRight += (`
@@ -35,7 +35,7 @@ export default function renderPrimaryMenu() {
 
   document.querySelector('.js-left-section-main')
     .innerHTML = htmlPrimaryMenuLeft;
-  
+
   document.querySelector('.js-category')
     .innerHTML = htmlPrimaryMenuRight;
 }

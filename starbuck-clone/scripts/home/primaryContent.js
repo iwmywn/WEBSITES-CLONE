@@ -19,16 +19,16 @@ export default function renderPrimaryContent() {
       </section>
     `;
   });
-  
+
   htmlPrimaryContent += noteContent;
-  
+
   document.getElementById('main')
     .innerHTML = htmlPrimaryContent;
-  
+
   setSize('title');
   setSize('content');
   reverse();
-  
+
   function setSize(name) {
     document.querySelectorAll(`.js-size-${name}`)
       .forEach((item) => {
@@ -41,7 +41,7 @@ export default function renderPrimaryContent() {
         });
       });
   }
-  
+
   function reverse() {
     document.querySelectorAll('.js-section')
       .forEach((sectionItem) => {
