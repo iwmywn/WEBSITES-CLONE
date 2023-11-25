@@ -3,10 +3,10 @@ import htmlOther from "../../data/gift-cards/other.js";
 
 export default function renderPrimaryContent() {
   let htmlPrimary = '';
-  let cartAmount = primaryContent.length;
+  let cardAmount = primaryContent.length;
   let i = 0;
   primaryContent.forEach((cardItem, index) => {
-    if (index !== 1 && index < (cartAmount - 2)) {
+    if (index !== 1 && index < (cardAmount - 2)) {
       let htmlCard = '';
       cardItem.image.forEach((imageItem) => {
         htmlCard += `
