@@ -1,7 +1,7 @@
 const favoritesContent = [{
   title: "Favorites",
   image: {
-    alt: "Animated illustration shows phases of the moon",
+    alt: "Illustration of well-used vintage mix tapes",
     src: "https://www.starbucks.com/weblx/images/fav-tapes.png"
   },
   cap: "Save your favorite mixes",
