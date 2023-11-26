@@ -10,19 +10,6 @@ export default function getMoreInfo(profile) {
         htmlInfo += content === ',' ? content : (' ' + content);
       } else
         htmlInfo += ` <span>${content}</span>`;
-      // "Live in",0
-      // "Mentor",1
-      // "at",2
-      // "ERAW CLUB",3
-      // ",",4
-      // "Quý Quân Nữ sinh khởi nghiệp 2022",5
-      // "at",6
-      // "SheFuture",7
-      // "and",8
-      // "Top 4 Young Innovation 2022",9
-      // "at",10
-      // "Cuộc Thi Khởi Nghiệp Đổi Mới Sáng Tạo"11
-      // -Live in-Mentor-at-ERAW CLUB,-Quý Quân Nữ sinh khởi nghiệp 2022-at-SheFuture-...
     }
 
     return htmlInfo;
