@@ -99,7 +99,7 @@ const listFriend = [{
 }, {
   id: "5",
   avatar: "/facebook-pics/lequyen.jpg",
-  name: "Đoan Trang",
+  name: "Lệ Quyên",
   "first-line": [
     "Lives in",
     "Ho Chi Minh City, Vietnam"
