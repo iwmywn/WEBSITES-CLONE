@@ -1,4 +1,4 @@
-import symbols from "./symbols.js";
+import { symbols } from "./symbols.js";
 
 const oriAuthor = {
   id: "page",

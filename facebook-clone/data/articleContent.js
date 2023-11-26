@@ -6,7 +6,10 @@ const articleContent = [{
     "December 29, 2021",
     "Wednesday, December 29, 2021 at 6:30 PM"
   ],
-  mode: "Public",
+  mode: [
+    "Public",
+    "public"
+  ],
   "ori-date": [
     "February 14, 2021",
     "Sunday, February 14, 2021 at 5:30 PM"
@@ -25,7 +28,10 @@ const articleContent = [{
     "December 28, 2021",
     "Tuesday, December 28, 2021 at 7:30 PM"
   ],
-  mode: "Public",
+  mode: [
+    "Public",
+    "public"
+  ],
   "ori-date": [
     "January 19, 2021",
     "Tuesday, January 19, 2021 at 7:30 PM"
@@ -44,7 +50,10 @@ const articleContent = [{
     "December 28, 2021",
     "Tuesday, December 28, 2021 at 6:00 PM"
   ],
-  mode: "Public",
+  mode: [
+    "Public",
+    "public"
+  ],
   "ori-date": [
     "January 19, 2021",
     "Tuesday, January 19, 2021 at 6:00 PM"
@@ -64,7 +73,10 @@ const articleContent = [{
     "December 26, 2021",
     "Sunday, December 26, 2021 at 10:00 PM"
   ],
-  mode: "Public",
+  mode: [
+    "Public",
+    "public"
+  ],
   "ori-date": [
     "January 18, 2021",
     "Monday, January 18, 2021 at 10:00 PM"
@@ -83,7 +95,10 @@ const articleContent = [{
     "December 25, 2021",
     "Saturday, December 25, 2021 at 8:30 PM"
   ],
-  mode: "Public",
+  mode: [
+    "Public",
+    "public"
+  ],
   "ori-date": [
     "January 18, 2021",
     "Monday, January 18, 2021 at 8:30 PM"
@@ -103,7 +118,10 @@ const articleContent = [{
     "December 25, 2021",
     "Saturday, December 25, 2021 at 12:40 PM"
   ],
-  mode: "Public",
+  mode: [
+    "Public",
+    "public"
+  ],
   "ori-date": [
     "January 17, 2021",
     "Sunday, January 17, 2021 at 9:00 PM"
@@ -122,7 +140,10 @@ const articleContent = [{
     "December 24, 2021",
     "Friday, December 24, 2021 at 9:30 PM"
   ],
-  mode: "Public",
+  mode: [
+    "Public",
+    "public"
+  ],
   "ori-date": [
     "December 2, 2020",
     "Wednesday, December 2, 2020 at 9:30 PM"
@@ -142,7 +163,10 @@ const articleContent = [{
     "December 23, 2021",
     "Thursday, December 23, 2021 at 9:30 PM"
   ],
-  mode: "Public",
+  mode: [
+    "Public",
+    "public"
+  ],
   "ori-date": [
     "December 1, 2020",
     "Tuesday, December 1, 2020 at 9:30 PM"
@@ -161,7 +185,10 @@ const articleContent = [{
     "December 20, 2021",
     "Monday, December 20, 2021 at 8:30 PM"
   ],
-  mode: "Public",
+  mode: [
+    "Public",
+    "public"
+  ],
   "ori-date": [
     "December 1, 2020",
     "Tuesday, December 1, 2020 at 8:30 PM"

@@ -1,12 +1,17 @@
 import articleContent from "../data/articleContent.js";
-import { profile, htmlProfile } from "../data/profile.js";
+import { profile } from "../data/profile.js";
 import { oriAuthor, htmlOriAuthor } from "../data/oriAuthor.js";
-import symbols from "../data/symbols.js";
+import { symbols } from "../data/symbols.js";
+import getSymbol from "../utils/getSymbol.js";
+import getMoreInfo from "../utils/getMoreInfo.js";
 
 export default function renderProfilePage() {
+  const htmlProfile = getMoreInfo(profile);
   let htmlContent = '';
+
   articleContent.forEach((articleInfo) => {
     let htmlCap = '';
+    
     articleInfo.cap.forEach((content) => {
       htmlCap += `<span>${content}</span>`;
     });
@@ -34,9 +39,9 @@ export default function renderProfilePage() {
                   <span>&#183;</span>
                 </div>
                 <div>
-                  <img src="${symbols.earth}" alt="symbols">
+                  <img src="${getSymbol(articleInfo.mode[1], true)}" alt="symbols">
                   <div class="display-mode">
-                    <span>${articleInfo.mode}</span>
+                    <span>${articleInfo.mode[0]}</span>
                   </div>
                 </div>
               </div>
@@ -72,7 +77,7 @@ export default function renderProfilePage() {
                     <span>&#183;</span>
                   </div>
                   <div>
-                    <img src="${symbols.earth}" alt="symbols">
+                    <img src="${getSymbol(articleInfo.mode[1], true)}" alt="symbols">
                     <div class="display-mode">
                       <span>${articleInfo["ori-mode"]}</span>
                     </div>
