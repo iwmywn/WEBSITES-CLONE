@@ -14,7 +14,7 @@ const articleContent = [{
     "February 14, 2021",
     "Sunday, February 14, 2021 at 5:30 PM"
   ],
-  "ori-mode": "Pulic",
+  "ori-mode": "Public",
   cap: [
     "Tôi vẫn luôn theo dõi cậu âm thầm"
   ],
@@ -36,7 +36,7 @@ const articleContent = [{
     "January 19, 2021",
     "Tuesday, January 19, 2021 at 7:30 PM"
   ],
-  "ori-mode": "Pulic",
+  "ori-mode": "Public",
   cap: [
     "/ Chỉ là vô tình gặp nhau, quen biết nhau nhưng ai ngờ lại yêu cậu nhiều đến vậy /"
   ],
@@ -58,7 +58,7 @@ const articleContent = [{
     "January 19, 2021",
     "Tuesday, January 19, 2021 at 6:00 PM"
   ],
-  "ori-mode": "Pulic",
+  "ori-mode": "Public",
   cap: [
     "Chan thanh la tot.",
     "Nhung doi khi chan thanh cua ban lai la tro cuoi cua nguoi khac."
@@ -81,7 +81,7 @@ const articleContent = [{
     "January 18, 2021",
     "Monday, January 18, 2021 at 10:00 PM"
   ],
-  "ori-mode": "Pulic",
+  "ori-mode": "Public",
   cap: [
     "No friends, no love, no hope"
   ],
@@ -103,7 +103,7 @@ const articleContent = [{
     "January 18, 2021",
     "Monday, January 18, 2021 at 8:30 PM"
   ],
-  "ori-mode": "Pulic",
+  "ori-mode": "Public",
   cap: [
     "Dù bản thân đã biết được câu trả lời, nhưng vẫn muốn tiếp tục",
     "tại sao vậy.."
@@ -126,7 +126,7 @@ const articleContent = [{
     "January 17, 2021",
     "Sunday, January 17, 2021 at 9:00 PM"
   ],
-  "ori-mode": "Pulic",
+  "ori-mode": "Public",
   cap: [
     "Giữa chúng ta là gì vậy ?"
   ],
@@ -148,7 +148,7 @@ const articleContent = [{
     "December 2, 2020",
     "Wednesday, December 2, 2020 at 9:30 PM"
   ],
-  "ori-mode": "Pulic",
+  "ori-mode": "Public",
   cap: [
     "Ai cung vui ve, ai cung co nguoi o ben.",
     "Con minh thi khong."
@@ -171,7 +171,7 @@ const articleContent = [{
     "December 1, 2020",
     "Tuesday, December 1, 2020 at 9:30 PM"
   ],
-  "ori-mode": "Pulic",
+  "ori-mode": "Public",
   cap: [
     "Tôi muốn chúng ta của sau này đều có cậu và có tôi."
   ],
@@ -193,7 +193,7 @@ const articleContent = [{
     "December 1, 2020",
     "Tuesday, December 1, 2020 at 8:30 PM"
   ],
-  "ori-mode": "Pulic",
+  "ori-mode": "Public",
   cap: [
     "Tôi yêu cậu nhưng cậu làm tôi buồn quá."
   ],
