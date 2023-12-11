@@ -1,0 +1,79 @@
+@use "../utils" as u;
+
+#nav-account {
+  @include u.flexJusCen;
+  background-color: var(--second-bg);
+  color: var(--second-text);
+  font-size: 1.4rem;
+  font-weight: 600;
+  height: 6rem;
+
+  .nav-container {
+    flex-grow: 1;
+    max-width: 118.6rem;
+    @include u.flexAliCen;
+    justify-content: space-between;
+    margin-inline: 1.6rem;
+  }
+
+  .main-nav {
+    @include u.flexAliCen;
+    align-self: stretch;
+  
+    &__item {
+      @include u.flexCen;
+      column-gap: 0.3rem;
+      height: 90%;
+      cursor: pointer;
+      padding-inline: 1.5rem;
+      position: relative;
+      
+      &.active {
+        color: var(--accent);
+        position: relative;
+
+        span {
+          color: inherit;
+        }
+      }
+
+      &.active::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -0.3rem;
+        height: 0.3rem;
+        background-color: var(--accent); 
+      }
+  
+      &:not(.active) {
+        border-radius: 0.6rem;
+    
+        &:hover {
+          background-color: var(--primary-button);
+        }
+      }
+    }
+  }
+  
+  .right-nav {
+    img {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+
+    button {
+      width: 4.8rem;
+      height: 3.6rem;
+      border-radius: var(--button-roundness);
+      @include u.flexCen;
+      background-color: var(--primary-button);
+      border: none;
+  
+      &:hover {
+        background-color: var(--primary-button-hover);
+      }
+    }
+  }
+}

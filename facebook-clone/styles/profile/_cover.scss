@@ -1,0 +1,46 @@
+@use "../utils" as u;
+
+#cover {
+  @include u.flexJusCen;
+  background-color: var(--second-bg);
+
+  .cover-width {
+    max-width: 125.0rem;
+    flex-grow: 1;
+  }
+
+  .cover-container {
+    background-color: var(--primary-bg);
+    border-radius: var(--container-roundness);
+    @include u.flexCol;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-top: 34.076%;
+
+    i {
+      filter: var(--filter-invert-100);
+    }
+  
+    &__option {
+      @include u.flexCen;
+      background-color: var(--dark-overlay);
+      color: var(--primary-button-text);
+      width: 18rem;
+      height: 3.6rem;
+      margin: 0 2.5rem 1rem 0;
+      border-radius: var(--button-roundness);
+      column-gap: 0.6rem;
+      cursor: pointer;
+    
+      &:hover {
+        background-color: var(--second-bg);
+      }
+    }
+
+    &__option:last-child {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

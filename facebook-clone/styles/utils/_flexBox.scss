@@ -1,0 +1,20 @@
+@mixin flexCen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexJusCen {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flexAliCen {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+}

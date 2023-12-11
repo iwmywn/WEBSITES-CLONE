@@ -1,0 +1,307 @@
+// WIDTH
+// 1280px
+@media only screen and (max-width: 78.75rem) {
+  #header {
+    .left-header,
+    .right-header {
+      max-width: 24rem;
+    }
+
+    .left-header {
+      input {
+        flex-grow: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+// 900px
+@media only screen and (max-width: 56.25rem) {
+  #cover {
+    .cover-container {
+      &__option {
+        width: 4.8rem;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+
+  #account {
+    height: 24.4rem;
+
+    .account-container {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 2rem;
+    }
+
+    .left-account,
+    .right-account {
+      position: relative;
+      top: -6.8rem;
+    }
+
+    .left-account {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 1rem;
+
+      &__avatar {
+        top: 0;
+      }
+
+      &__name {
+        h2, span {
+          align-self: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #main {
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 1rem;
+
+    .left-account-info {
+      max-width: 68.0rem;
+      margin-right: 1.6rem;
+    }
+
+    .right-account-info {
+      max-width: 68.0rem;
+      margin-left: 1.6rem;
+    }
+  }
+}
+
+// 700px
+@media only screen and (max-width: 43.75rem) {
+  #header {
+    .left-header,
+    .right-header {
+      max-width: max-content;
+    }
+    .mid-header {
+      display: none;
+    }
+  }
+}
+
+// 660px
+@media only screen and (max-width: 41.25rem) {
+  #nav-account {
+    .nav-container {
+      .main-nav>a:nth-of-type(6) {
+        display: none;
+      }
+    }
+  }
+}
+
+// 560px
+@media only screen and (max-width: 35rem) {
+  #nav-account {
+    .nav-container {
+      .main-nav>a:nth-of-type(5) {
+        display: none;
+      }
+    }
+  }
+
+  #main {
+    .left-account-info {
+      .info {
+        &__featured {
+          .story-container {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 500px
+@media only screen and (max-width: 31.25rem) {
+  #account {
+    .right-account {
+      width: 100%;
+
+      &__add {
+        width: 40.53606730725024%;
+      }
+
+      &__edit {
+        width: 38.05572157601949%;
+      }
+
+      &__friend-suggest {
+        width: 21.40821111673027%;
+      }
+    }
+  }
+}
+
+// 480px
+@media only screen and (max-width: 30rem) {
+  #nav-account {
+    .nav-container {
+      .main-nav>a:nth-of-type(4) {
+        display: none;
+      }
+    }
+  }
+}
+
+// 425px
+@media only screen and (max-width: 26.5625rem) {
+  #main {
+    .right-account-info {
+      .post {
+        .options>div:last-of-type {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// 400px
+@media only screen and (max-width: 25rem) {
+  #nav-account {
+    .nav-container {
+      .main-nav>a:nth-of-type(3) {
+        display: none;
+      }
+    }
+  }
+
+  #main {
+    .left-account-info {
+      .info {
+        &__featured {
+          .story-container {
+            width: 30%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 350px
+@media only screen and (max-width: 21.875rem) {
+  #account {
+    height: 28.8rem;
+    
+    .right-account {
+      row-gap: 0.8rem;
+      flex-wrap: wrap;
+
+      &__add,
+      &__edit,
+      &__friend-suggest {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+// 320px
+@media only screen and (max-width: 20rem) {
+  #nav-account {
+    .nav-container {
+      .main-nav>a:nth-of-type(2) {
+        display: none;
+      }
+    }
+  }
+}
+
+// 315px
+@media only screen and (max-width: 19.6875rem) {
+  #main {
+    .right-account-info {
+      .post {
+        .options>div:nth-of-type(2) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// 312px
+@media only screen and (max-width: 19.5rem) {
+  #account {
+    height: 32.72rem;
+  }
+}
+
+// HEIGHT-WIDTH
+// 790px 926px
+@media only screen and (max-height: 49.375rem) and (min-width: 57.875rem) {
+  #cover {
+    .cover-width {
+      max-width: 109.5rem;
+    }
+  }
+
+  #account {
+    .account-container {
+      max-width: 103.1rem;
+    }
+  }
+
+  #nav-account {
+    .nav-container {
+      max-width: 103.1rem;
+    }
+  }
+
+  #main {
+    .left-account-info {
+      max-width: 42.5rem;
+    }
+    
+    .right-account-info {
+      max-width: 59.1rem;
+    }
+  }
+}
+
+// 700px 926px
+@media only screen and (max-height: 43.75rem) and (min-width: 57.875rem) {
+  #cover {
+    .cover-width {
+      max-width: 94rem;
+    }
+  }
+
+  #account {
+    .account-container {
+      max-width: 87.6rem;
+    }
+  }
+
+  #nav-account {
+    .nav-container {
+      max-width: 87.6rem;
+    }
+  }
+
+  #main {
+    .left-account-info {
+      max-width: 36rem;
+    }
+    
+    .right-account-info {
+      max-width: 50rem;
+    }
+  }
+}

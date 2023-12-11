@@ -1,0 +1,233 @@
+@use "../utils" as u;
+
+#main {
+  .left-account-info {
+    max-width: 49.0rem;
+    flex-basis: 36rem;
+    margin-left: 1.6rem;
+    position: relative;
+    z-index: 1;
+  
+    h3 {
+      font-size: 2rem;
+      color: var(--primary-text);
+    
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    h4 {
+      font-size: 1.6rem;
+      color: var(--blue-link);
+      height: 3rem;
+      padding: 0.5rem;
+      border-radius: var(--button-roundness);
+      font-weight: normal;
+      
+      &:hover {
+        background-color: var(--primary-button);
+      }
+    }
+  
+    .info {
+      @include u.flexCol;
+    
+      h2 {
+        font-size: 2rem;
+      }
+    
+      &__bio {
+        @include u.flexCen;
+        margin-block: 1rem;
+      }
+    
+      &__edit {
+        @include u.flexCen;
+        height: 3.6rem;
+        border-radius: var(--button-roundness);
+        background-color: var(--primary-button);
+        font-weight: 600;
+        cursor: pointer;
+      
+        &:hover {
+          background-color: var(--primary-button-hover);
+        }
+      }
+    
+      &__details {
+        @include u.flexCol;
+        row-gap: 2rem;
+        padding: 2rem 0 1.5rem 0;
+      
+        img {
+          filter: var(--filter-placeholder-icon);
+        }
+      
+        span {
+          font-weight: 600;
+          cursor: pointer;
+      
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      
+        a {
+          &.social-links {
+            color: var(--blue-link);
+          }
+      
+          &.websites {
+            color: var(--accent);
+          }
+      
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      
+        .content {
+          @include u.flexAliCen;
+          column-gap: 0.8rem;
+          word-break: break-word;
+        }
+      }
+      
+      &__featured {
+        margin-block: 1.2rem;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+    
+        img {
+          width: 100%;
+        }
+
+        .story-container {
+          width: 32%;
+        }
+      
+        .picture {
+          position: relative;
+          border-radius: var(--picture-roundness);
+          overflow: hidden;
+          cursor: pointer;
+
+          img {
+            transition: all 0.2s;
+          }
+
+          span {
+            position: absolute;
+            left: 0.8rem;
+            bottom: 0.8rem;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: var(--black-alpha-10);
+          }
+
+          &:hover::after {
+            background-color: var(--black-alpha-20);
+          }
+
+          &:hover img {
+            transform: scale(1.01);
+          }
+        }
+      }
+    }
+    
+    .photos {
+      @include u.flexAliCen;
+      justify-content: space-between;
+    }
+
+    .sticky {
+      @include u.flexCol;
+      row-gap: 1.6rem;
+      position: sticky;
+      top: 6rem;
+
+      > div:first-child {
+        background-color: var(--second-bg);
+        border-radius: var(--container-roundness);
+        padding: 1rem 1.5rem;
+      }
+    }
+    
+    .friends {
+      &__title {
+        @include u.flexAliCen;
+        justify-content: space-between;
+      }
+    
+      &__quantity {
+        margin: 0.5rem 0 1.4rem 0;
+        color: var(--second-text);
+      }
+    
+      .grid-friends {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem 1rem;
+    
+        img {
+          width: 100%;
+        }
+      }
+    
+      .friend {
+        cursor: pointer;
+        position: relative;
+    
+        > span {
+          font-weight: 600;
+          font-size: 1.3rem;
+        }
+
+        > img {
+          border-radius: var(--picture-roundness);
+        }
+
+        &:hover #more-info {
+          visibility: visible;
+          transition-delay: 0.5s;
+        }
+      }
+    }
+    
+    .nav-footer {
+      display: flex;
+      column-gap: 0.5rem;
+      flex-wrap: wrap;
+      font-size: 1.2rem;
+      color: var(--second-text);
+      padding-inline: 0.3rem;
+    
+      a {
+        color: var(--second-text);
+        span {
+          color: inherit;
+    
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    
+      div {
+        cursor: pointer;
+      }
+    
+      i {
+        filter: var(--filter-secondary-icon);
+        vertical-align: middle;
+      }
+    }
+  }
+}

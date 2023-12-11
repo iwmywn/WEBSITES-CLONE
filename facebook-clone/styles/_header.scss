@@ -1,0 +1,204 @@
+@use "utils" as u;
+
+@mixin flexGrow {
+  @include u.flexAliCen;
+  flex-grow: 1;
+  height: 100%;
+  column-gap: 0.8rem;
+}
+
+@mixin toolTip {
+  @include u.flexCen;
+  position: absolute;
+  top: 100%;
+  margin-top: 0.5rem;
+  padding-inline: 1.3rem;
+  height: 3.3rem;
+  border-radius: var(--button-roundness-hover);
+  opacity: 0;
+  pointer-events: none;
+  background-color: var(--tooltip-bg);
+  color: #000;
+  font-size: 1.2rem;
+  z-index: 1;
+  transition: all 0.1s;
+}
+
+@mixin notification {
+  position: absolute;
+  background-color: var(--notification-badge);
+  color: var(--primary-button-text);
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 999rem;
+  margin-top: -3rem;
+  margin-right: -4rem;
+  padding: 0.15rem 0.5rem;
+  z-index: 1;
+}
+
+#header {
+  @include u.flexAliCen;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6rem;
+  background-color: var(--second-bg);
+  padding-inline: 2rem;
+  border-bottom: 1px solid var(--white-alpha-10);
+  z-index: 999;
+
+  .left-header {
+    @include flexGrow;
+    max-width: 32rem;
+
+    &__logo-link {
+      width: 4rem;
+      height: 4rem;
+    }
+  
+    &__search {
+      display: flex;
+      position: relative;
+      flex-grow: 1;
+  
+      img {
+        position: absolute;
+        left: 1.25rem;
+        top: 1.25rem;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  
+    input {
+      font-size: 1.5rem;
+      font-family: inherit;
+      outline: none;
+      border: none;
+      height: 4rem;
+      border-radius: 999rem;
+      padding-inline: 4rem 1rem;
+      flex-grow: 1;
+      width: 0;
+      background-color: var(--primary-button);
+      color: var(--primary-text);
+  
+      &::placeholder {
+        color: var(--second-text);
+      }
+    }
+  }
+  
+  .mid-header {
+    @include flexGrow;
+    justify-content: center;
+    position: relative;
+
+    img {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  
+    &__nav {
+      @include u.flexCen;
+      height: 90%;
+      flex-grow: 1;
+      max-width: 12rem;
+      border-radius: var(--button-roundness);
+      cursor: pointer;
+      transition: all 0.1s;
+  
+      &:hover {
+        background-color: var(--primary-button);
+      }
+    }
+
+    &__nav::after { 
+      @include toolTip;
+    }
+
+    &__home::after { content: "Home"; }
+
+    &__video::after { content: "Video"; }
+
+    &__marketplace::after { content: "Marketplace"; }
+
+    &__groups::after { content: "Groups"; }
+
+    &__home:hover::after,
+    &__video:hover::after,
+    &__marketplace:hover::after,
+    &__groups:hover::after {
+      opacity: 1;
+      transition-delay: 0.3s;
+    }
+  }
+  
+  .right-header {
+    @include flexGrow;
+    max-width: 32rem;
+    justify-content: flex-end;
+    position: relative;
+  
+    &__option {
+      @include u.flexCen;
+      width: 4rem;
+      height: 4rem;
+      background-color: var(--primary-button);
+      border-radius: 999rem;
+      cursor: pointer;
+      transition: all 0.1s;
+    }
+  
+    &__option:not(:last-child) {
+      &:hover {
+        background-color: var(--primary-button-hover);
+      }
+  
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+
+    &__option:last-child {
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__option::after {
+      @include toolTip;
+    }
+
+    &__menu::after { content: "Menu"; }
+
+    &__messenger::before {
+      @include notification;
+      content: "3";
+    }
+    &__messenger::after { content: "Messenger"; }
+
+    &__notifications::before {
+      @include notification;
+      content: "20+";
+    }
+    &__notifications::after { content: "Notifications"; }
+
+    &__avatar::after { content: "Account"; margin-right: 2rem; }
+
+    &__menu:hover::after,
+    &__messenger:hover::after,
+    &__notifications:hover::after,
+    &__avatar:hover::after {
+      opacity: 1;
+      transition-delay: 0.3s;
+    }
+  }
+}
