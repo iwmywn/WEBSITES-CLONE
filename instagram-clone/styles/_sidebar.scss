@@ -1,0 +1,113 @@
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 38.3rem;
+  padding-left: 6.4rem;
+  font-size: 1.4rem;
+  color: var(--primary-text);
+
+  .account {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1.6rem;
+    height: 6rem;
+
+    &__avatar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 5.4rem;
+      height: 5.4rem;
+      margin-right: 0.5rem;
+
+      img {
+        width: 4.4rem;
+        height: 4.4rem;
+        border-radius: 999rem;
+        cursor: pointer;
+      }
+    }
+
+    &__name {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+
+      .username {
+        align-self: baseline;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .fullname {
+        align-self: baseline;
+        color: var(--second-text);
+      }
+    }
+
+    &__option {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--accent-text);
+      cursor: pointer;
+
+      &:hover {
+        color: var(--ig-link);
+      }
+    }
+  }
+
+  .suggest {
+    margin-top: 2.4rem;
+
+    &__title {
+      display: flex;
+      align-items: center;
+      padding-inline : 1.6rem;
+      margin-bottom: 1.6rem;
+
+      .title {
+        flex-grow: 1;
+        font-weight: 600;
+        color: var(--second-text);
+      }
+
+      .option {
+        font-size: 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    &__account {
+      .fullname {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .nav {
+    margin-top: 1.6rem;
+    padding-inline: 1.6rem;
+    padding-bottom: 3.8rem;
+    font-size: 1.2rem;
+    color: var(--extra-text);
+
+    a {
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    span {
+      display: block;
+      margin-top: 2rem;
+    }
+  }
+}

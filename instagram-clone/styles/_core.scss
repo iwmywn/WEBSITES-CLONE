@@ -1,0 +1,56 @@
+:root {
+  // color
+  --primary-text: #000;
+  --second-text: #737373;
+  --accent-text: #0095F6;
+  --extra-text: #C7C7C7;
+
+  // highlight-bg
+  --ig-hightlight-bg: #EFEFEF;
+
+  // border
+  --black-alpha-10: rgba(0, 0, 0, 0.1);
+  --white-alpha-10: rgba(255, 255, 255, 0.1);
+
+  // button
+  --button-hover: rgba(0, 0, 0, 0.05);
+
+  // link
+  --ig-link: rgb(0, 55, 107);
+
+  // icon
+  --ig-second-icon: rgb(142, 142, 142);
+
+  // badge
+  --ig-badge: rgb(255, 48, 64);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+button {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
