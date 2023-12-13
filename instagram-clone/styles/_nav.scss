@@ -139,6 +139,12 @@
         color: var(--ig-second-icon);
       }
     }
+
+    &__notifications {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
   }
 }
 
@@ -163,7 +169,7 @@
     border-radius: 999rem;
   }
 
-  .nav__item {
+  .nav-item {
     display: flex;
     justify-content: center;
     align-items: center;
