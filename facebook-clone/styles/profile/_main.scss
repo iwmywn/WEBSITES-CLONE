@@ -10,6 +10,7 @@
     @include u.flexCol;
     row-gap: 1.6rem;
     color: var(--primary-text);
+    flex-grow: 1;
     font-size: 1.4rem;
     min-width: 20rem;
 
