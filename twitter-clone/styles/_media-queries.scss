@@ -1,0 +1,93 @@
+// HEIGHT
+// 750px
+@media only screen and (max-height: 46.875rem) {
+  .nav {
+    &__item:nth-of-type(7) {
+      display: none;
+    }
+  }
+}
+
+// WIDTH
+// 1280px
+@media only screen and (max-width: 80rem) {
+  .nav {
+    width: 7.2rem;
+    align-items: center;
+    flex-shrink: 0;
+    
+    .nav-top, 
+    .nav-bottom > * {
+        justify-content: center;
+      }
+
+    &__item:not(&__logo) {
+      span {
+        display: none;
+      }
+    }
+
+    &__tweet {
+      button {
+        width: 5rem;
+        
+        span {
+          display: none;
+        }
+
+        svg {
+          display: block;
+        }
+      }
+    }
+
+    .nav-bottom > *:not(.avatar) {
+      display: none;
+    }
+  }
+}
+
+// 1100px
+@media only screen and (max-width: 68.75rem) {
+  #main {
+    max-width: 92rem;
+    
+    #aside {
+      max-width: 29rem;
+  
+      .who-to-follow {
+        .account {
+          &__name {
+            .fullname {
+              span {
+                max-width: 9rem;
+                overflow: hidden;
+                text-overflow: clip;
+                white-space: nowrap;
+              }
+            }
+  
+            .username {
+              max-width: 9rem;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 1;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 1020px
+@media only screen and (max-width: 63.75rem) {
+  #main {
+    max-width: 60rem;
+
+    #aside {
+      display: none;
+    }
+  }
+}

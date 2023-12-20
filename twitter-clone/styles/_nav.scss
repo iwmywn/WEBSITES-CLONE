@@ -1,0 +1,141 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 1.6rem;
+  width: 27.5rem;
+  padding: 0 0.8rem 1.2rem 0.8rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: var(--alway-white);
+  color: var(--primary-text);
+  z-index: 10;
+  border-right: 1px solid var(--black-alpha-8);
+
+  .nav-top {
+    font-size: 2rem;
+
+    .active {
+      font-weight: 700;
+    }
+  }
+
+  &__item {
+    display: flex;
+
+    > div {
+      display: flex;
+      align-items: center;
+      height: 5rem;
+      border-radius: 999rem;
+    }
+
+    &:hover > div {
+      background-color: var(--button-hover);
+    }
+  }
+
+  &__item:not(&__logo) {
+    svg {
+      width: 2.625rem;
+      height: 2.625rem;
+    }
+
+    span {
+      margin-inline: 2rem;
+    }
+
+    > div {
+      padding: 1.2rem;
+    }
+  }
+
+  &__logo {
+    width: 5rem;
+    margin-bottom: 0.4rem;
+
+    > div {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  &__tweet {
+    display: block;
+    height: 5rem;
+    margin-top: 0.4rem;
+    cursor: auto;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: inherit;
+      font-size: 1.7rem;
+      font-weight: 700;
+      width: 90%;
+      height: 100%;
+      border: none;
+      border-radius: 999rem;
+      color: var(--button-text);
+      background-color: var(--extra-text);
+
+      svg {
+        display: none;
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+
+      &:hover {
+        background-color: var(--button-extra-hover);
+      }
+    }
+  }
+
+  .nav-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    border-radius: 999rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--button-hover);
+    }
+
+    .avatar {
+      width: 4rem;
+      height: 4rem;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 999rem;
+      }
+    }
+
+    .name {
+      &__fullname {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+
+        span {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: clip;
+          max-width: 14rem;
+        }
+      }
+
+      &__username {
+        color: var(--second-text);
+      }
+    }
+  }
+}

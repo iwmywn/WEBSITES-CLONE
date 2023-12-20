@@ -1,0 +1,249 @@
+#aside {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6rem;
+  max-width: 35rem;
+  height: max-content;
+  padding-bottom: 6.4rem;
+  font-size: 1.5rem;
+  color: var(--primary-text);
+
+  .search {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--alway-white);
+
+    input {
+      outline: none;
+      border: none;
+      border-radius: 999rem;
+      height: 4.24rem;
+      width: 100%;
+      padding-inline: 5.875rem 1.2rem;
+      font-size: inherit;
+      font-family: inherit;
+      background-color: var(--search-bg);
+      
+      &::placeholder {
+        color: var(--second-text);
+      }
+    }
+
+    svg {
+      width: 1.875rem;
+      height: 1.875rem;
+      position: absolute;
+      top: 1.1825rem;
+      left: 2rem;
+      fill: var(--second-text);
+    }
+  }
+
+  .subscribe {
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    border-radius: 1.6rem;
+    background-color: var(--second-bg);
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    .content {
+      color: var(--second-text);
+    }
+
+    button {
+      align-self: flex-start;
+      padding-inline: 1.6rem;
+      height: 3.6rem;
+      background-color: var(--alway-black);
+      color: var(--button-text);
+      border: none;
+      border-radius: 999rem;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: inherit;
+    }
+  }
+
+  .trends {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--second-bg);
+    border-radius: 1.6rem;
+
+    .title {
+      font-size: 2rem;
+      margin: 1.2rem 1.6rem;
+    }
+
+    .trend {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.4rem;
+      padding: 1.2rem 1.6rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--third-bg);
+      }
+
+      &__country {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-block: -0.8rem -1.2rem;
+
+        svg {
+          width: 1.875rem;
+          height: 1.875rem;
+        }
+
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 3.475rem;
+          height: 3.475rem;
+          border-radius: 999rem;
+          cursor: pointer;
+
+          &:hover {
+            background-color: var(--icon-blue);
+            color: var(--extra-text);
+          }
+        }
+      }
+
+      &__country,
+      &__post-amount {
+        font-size: 1.3rem;
+        color: var(--second-text);
+      }
+
+      &__name {
+        font-weight: 700;
+      }
+    }
+
+    &__show-more {
+      padding: 1.6rem;
+      color: var(--extra-text);
+      border-bottom-left-radius: 1.6rem;
+      border-bottom-right-radius: 1.6rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--third-bg);
+      }
+    }
+  }
+
+  .who-to-follow {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--second-bg);
+    border-radius: 1.6rem;
+
+    .title {
+      font-size: 2rem;
+      margin: 1.2rem 1.6rem;
+    }
+
+    .account {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      column-gap: 1.2rem;
+      padding: 1.2rem 1.6rem;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: var(--third-bg);
+      }
+
+      &__avatar {
+        width: 4rem;
+        height: 4rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &__name {
+        flex-grow: 1;
+
+        svg {
+          width: 1.875rem;
+          height: 1.875rem;
+        }
+
+        .fullname {
+          display: flex;
+          align-items: center;
+          column-gap: 0.4rem;
+          font-weight: 700;
+
+          &:hover span {
+            text-decoration: underline;
+          }
+        }
+
+        .username {
+          color: var(--second-text);
+        }
+      }
+
+      button {
+        background-color: var(--alway-black);
+        color: var(--button-text);
+        height: 3.2rem;
+        padding-inline: 1.6rem;
+        border: none;
+        border-radius: 999rem;
+        font-size: 1.4rem;
+        font-family: inherit;
+        font-weight: 700;
+      }
+    }
+
+    .show-more {
+      padding: 1.6rem;
+      color: var(--extra-text);
+      border-bottom-left-radius: 1.6rem;
+      border-bottom-right-radius: 1.6rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--third-bg);
+      }
+    }
+  }
+
+  .alt-nav {
+    font-size: 1.3rem;
+    color: var(--second-text);
+    padding-inline: 1.6rem;
+
+    a {
+      margin-right: 0.5rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    svg {
+      width: 1.7rem;
+      height: 1.3rem;
+      vertical-align: middle;
+      fill: var(--second-text);
+    }
+  }
+}

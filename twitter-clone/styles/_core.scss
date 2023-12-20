@@ -1,0 +1,62 @@
+:root {
+  --alway-black: #000;
+  --alway-white: #FFF;
+
+  --primary-text: #0f1419;
+  --second-text: #536471;
+  --extra-text: #1D9BF0;
+
+  --search-bg: #EFF3F4;
+  --second-bg: #F7F9F9;
+  --third-bg: #EFF1F1;
+
+  --black-alpha-8: rgba(0, 0, 0, 0.08);
+  --white-alpha-50: rgba(255, 255, 255, 0.5);
+
+  --button-text: #FFF;
+  --button-hover: #E7E7E8;
+  --button-extra-hover: #1A8CD8;
+
+  --icon-hover: #E8F5FD;
+
+  --icon-blue: #E1EEF6;
+  --icon-green: #DEF1EB;
+  --icon-lightpink: #F7E0EB;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  min-height: 200vh;
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
