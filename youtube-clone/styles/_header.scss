@@ -1,0 +1,143 @@
+@mixin iconBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 999rem;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5.6rem;
+  padding-inline: 1.6rem;
+  color: var(--primary-text);
+  background-color: aquamarine;
+  z-index: 10;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    
+    > * {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      height: 100%;
+    }
+
+    &__nav {
+      column-gap: 1.6rem;
+      background-color: aqua;
+      max-width: 25rem;
+
+      &__hamberger-menu {
+        @include iconBox;
+        background-color: lightblue;
+
+        &:hover {
+          background-color: var(--header-iconbox-hover);
+        }
+      }
+
+      &__logo {
+        display: flex;
+        align-items: center;
+        background-color: lightyellow;
+        height: 100%;
+        cursor: pointer;
+      }
+    }
+
+    &__search {
+      max-width: 60rem;
+
+      &__bar {
+        flex: 1;
+        height: 4rem;
+        outline: none;
+        border: 1px solid var(--searchbox-border);
+        border-radius: 999rem 0 0 999rem;
+        box-shadow: inset 0 1px 2px var(--searchbox-shadow);
+        padding-inline: 1.6rem 4px;
+        font-size: inherit;
+        font-family: inherit;
+        color: inherit;
+
+        &::placeholder {
+          color: var(--second-text);
+        }
+
+        &:focus {
+          border: 1px solid #1c62b9;
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+      }
+
+      &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 6.4rem;
+        height: 4rem;
+        border-radius: 0 999rem 999rem 0;
+        border-width: 1px 1px 1px 0;
+        border-style: solid;
+        border-color: var(--searchbox-border);
+        background-color: var(--searchbox-button);
+
+        &:hover {
+          background-color: var(--searchbox-button-hover);
+        }
+      }
+
+      &__voice {
+        @include iconBox;
+        cursor: pointer;
+        margin-left: 1.6rem;
+        background-color: var(--search-voice);
+
+        &:hover {
+          background-color: var(--search-voice-hover);
+        }
+      }
+    }
+
+    &__account {
+      justify-content: flex-end;
+      column-gap: 1.6rem;
+      max-width: 25rem;
+      background-color: lightpink;
+
+      > * {
+        background-color: aqua
+      }
+
+      &__create,
+      &__notifications {
+        @include iconBox;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--header-iconbox-hover);
+        }
+      }
+
+      &__profile {
+        display: flex;
+        align-items: center;
+        margin-right: 1.6rem;
+
+        img {
+          border-radius: 999rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

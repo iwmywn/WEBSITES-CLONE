@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --alway-white: #FFF;
+  --alway-black: #000;
+
+  --primary-text: #0F0F0F;
+  --second-text: #606060;
+
+  --black-alpha-10: rgba(0, 0, 0, 0.1);
+
+  --searchbox-shadow: #EEE;
+  --searchbox-button: #F8F8F8;
+  --searchbox-button-hover: #F0F0F0;
+  --searchbox-border: #D3D3D3;
+  --search-voice: #F2F2F2;
+  --search-voice-hover: #D9D9D9;
+  --header-iconbox-hover: #E5E5E5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  background-color: var(--alway-white);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
