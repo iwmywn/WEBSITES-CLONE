@@ -27,21 +27,20 @@
     > * {
       display: flex;
       align-items: center;
-      flex: 1;
       height: 100%;
     }
 
     &__nav {
       column-gap: 1.6rem;
       background-color: aqua;
-      max-width: 25rem;
+      width: 25rem;
 
       &__hamberger-menu {
         @include iconBox;
         background-color: lightblue;
 
         &:hover {
-          background-color: var(--header-iconbox-hover);
+          background-color: var(--iconbox-hover);
         }
       }
 
@@ -55,10 +54,12 @@
     }
 
     &__search {
+      flex: 1;
       max-width: 65rem;
 
       &__bar {
         flex: 1;
+        width: 0;
         height: 4rem;
         outline: none;
         border: 1px solid var(--searchbox-border);
@@ -111,7 +112,7 @@
     &__account {
       justify-content: flex-end;
       column-gap: 1.6rem;
-      max-width: 25rem;
+      width: 25rem;
       background-color: lightpink;
 
       > * {
@@ -124,7 +125,7 @@
         cursor: pointer;
 
         &:hover {
-          background-color: var(--header-iconbox-hover);
+          background-color: var(--iconbox-hover);
         }
       }
 
@@ -138,6 +139,52 @@
           cursor: pointer;
         }
       }
+    }
+  }
+}
+
+#header-theme {
+  position: fixed;
+  top: 5.6rem;
+  left: 26.4rem;
+  right: 0;
+  height: 5.6rem;
+  background-color: darkgray;
+  color: var(--primary-text);
+  font-weight: 500;
+  font-size: 1.4rem;
+  overflow: hidden;
+  z-index: 10;
+
+  .header-theme {
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+    height: 100%;
+    position: relative;
+    background-color: beige;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      height: 3.2rem;
+      padding-inline: 1.2rem;
+      border-radius: 0.8rem;
+      cursor: pointer;
+
+      &:hover:not(.active) {
+        background-color: var(--iconbox-hover);
+      }
+    }
+
+    &__item:not(.active) {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .active {
+      background-color: var(--alway-black);
+      color: var(--alway-white);
     }
   }
 }
