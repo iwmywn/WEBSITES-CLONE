@@ -6,6 +6,7 @@
 
   --primary-text: #0F0F0F;
   --second-text: #606060;
+  --third-text: #909090;
 
   --black-alpha-10: rgba(0, 0, 0, 0.1);
 
@@ -33,7 +34,28 @@ body {
   background-color: var(--alway-white);
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 button {
   cursor: pointer;
   border: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.9rem;
+}
+
+#nav::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+#nav::-webkit-scrollbar-thumb {
+  border-radius: 999rem;
+}
+
+#nav:hover::-webkit-scrollbar-thumb {
+  background-color: #909090;
 }
