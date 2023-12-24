@@ -11,7 +11,7 @@ export default function renderVideo() {
 
   randomVideo.forEach((section) => {
     htmlVideo += `
-      <div class="main__section">
+      <section class="main__section">
         <a class="thumbnail" href="${section.videoUrl}">
           <img alt="" style="background-color: transparent;" src="${section.thumbnail}">
           <div class="thumbnail__time-status">${section.timeStatus}</div>
@@ -31,7 +31,7 @@ export default function renderVideo() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     `;
   });
 
