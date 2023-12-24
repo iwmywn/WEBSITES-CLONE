@@ -7,6 +7,31 @@
   border-radius: 999rem;
 }
 
+[aria-label] {
+  position: relative;
+}
+
+[aria-label]::after {
+  content: attr(aria-label);
+  background-color: var(--tooltip-bg);
+  color: var(--alway-white);
+  position: absolute;
+  top: 150%;
+  z-index: 11;
+  padding: 1rem 0.8rem;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  font-family: 'Roboto', Arial, sans-serif;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+[aria-label]:hover::after {
+  opacity: 1;
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -15,7 +40,7 @@
   height: 5.6rem;
   padding-inline: 1.6rem;
   color: var(--primary-text);
-  background-color: aquamarine;
+  background-color: var(--alway-white);
   z-index: 10;
 
   .header {
@@ -32,12 +57,10 @@
 
     &__nav {
       column-gap: 1.6rem;
-      background-color: aqua;
       width: 25rem;
 
       &__hamberger-menu {
         @include iconBox;
-        background-color: lightblue;
 
         &:hover {
           background-color: var(--iconbox-hover);
@@ -47,7 +70,6 @@
       &__logo {
         display: flex;
         align-items: center;
-        background-color: lightyellow;
         height: 100%;
         cursor: pointer;
       }
@@ -113,11 +135,6 @@
       justify-content: flex-end;
       column-gap: 1.6rem;
       width: 25rem;
-      background-color: lightpink;
-
-      > * {
-        background-color: aqua
-      }
 
       &__create,
       &__notifications {
@@ -149,12 +166,12 @@
   left: 26.4rem;
   right: 0;
   height: 5.6rem;
-  background-color: darkgray;
   color: var(--primary-text);
+  background-color: var(--alway-white);
   font-weight: 500;
   font-size: 1.4rem;
   overflow: hidden;
-  z-index: 10;
+  z-index: 9;
 
   .header-theme {
     display: flex;
@@ -162,7 +179,6 @@
     column-gap: 1.2rem;
     height: 100%;
     position: relative;
-    background-color: beige;
 
     &__item {
       display: flex;

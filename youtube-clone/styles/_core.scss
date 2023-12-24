@@ -8,6 +8,7 @@
   --second-text: #606060;
   --third-text: #909090;
 
+  --black-alpha-5: rgba(0, 0, 0, 0.05);
   --black-alpha-10: rgba(0, 0, 0, 0.1);
   --black-alpha-80: rgba(0, 0, 0, 0.8);
 
@@ -18,9 +19,11 @@
   --search-voice: #F2F2F2;
   --search-voice-hover: #D9D9D9;
 
+  --tooltip-bg: #707070;
+
   --iconbox-hover: #E5E5E5;
 
-  --newness: #065FD4;
+  --extra: #065FD4;
 }
 
 * {

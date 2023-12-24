@@ -8,14 +8,13 @@
   font-size: 1.4rem;
   padding-right: 0.3rem;
   color: var(--primary-text);
-  background-color: aqua;
+  background-color: var(--alway-white);
   overflow-x: hidden;
   overflow-y: scroll;
 
   .nav {
     display: flex;
     flex-direction: column;
-    background-color: azure;
 
     &__item {
       display: flex;
@@ -25,10 +24,9 @@
       height: 4rem;
       border-radius: 1rem;
       position: relative;
-      background-color: lightblue;
 
       &:hover {
-        background-color: rgba(0, 0, 0, 0.05);
+        background-color: var(--black-alpha-5);
       }
 
       span {
@@ -51,7 +49,7 @@
         width: 0.4rem;
         height: 0.4rem;
         border-radius: 999rem;
-        background-color: var(--newness);
+        background-color: var(--extra);
         right: 1.6rem;
       }
     }
@@ -74,7 +72,7 @@
 
     .active {
       font-weight: 500;
-      background-color: rgba(0, 0, 0, 0.05);
+      background-color: var(--black-alpha-5);
 
       &:hover {
         background-color: var(--iconbox-hover);
@@ -117,7 +115,6 @@
     font-size: 1rem;
     width: 100%;
     margin-top: 0.4rem;
-    background-color: lightgray;
 
     &__item {
       display: flex;
@@ -127,10 +124,9 @@
       height: 7.4rem;
       row-gap: 0.6rem;
       padding-block: 1.6rem 1.4rem;
-      background-color: lightseagreen;
 
       &:hover {
-        background-color: rgba(0, 0, 0, 0.05);
+        background-color: var(--black-alpha-5);
       }
     }
   }
