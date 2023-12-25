@@ -58,12 +58,12 @@ button {
   width: 0.9rem;
 }
 
-#nav::-webkit-scrollbar {
-  background-color: transparent;
+::-webkit-scrollbar-thumb {
+  border-radius: 999rem;
 }
 
 #nav::-webkit-scrollbar-thumb {
-  border-radius: 999rem;
+  background-color: transparent;
 }
 
 #nav:hover::-webkit-scrollbar-thumb {
@@ -72,7 +72,6 @@ button {
 
 body::-webkit-scrollbar-thumb {
   background-color: #606060;
-  border-radius: 999rem;
 }
 
 body::-webkit-scrollbar-thumb:hover {
