@@ -22,9 +22,9 @@ export default function renderVideo() {
           </a>
           <div class="author__content">
             <a class="author__content__title" href="${section.videoUrl}">${section.title}</a>
-            <a class="author__content__name" href="${section.channelUrl}">
-              <span>${section.channelName}</span>
-            </a>
+            <div class="author__content__name">
+              <a href="${section.channelUrl}">${section.channelName}</a>
+            </div>
             <div class="author__content__view-postdate">
               <span>${section.views}</span>
               <span class="postdate">${section.postDate}</span>
