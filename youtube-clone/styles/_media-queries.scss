@@ -80,7 +80,7 @@
 @media only screen and (max-width: 42.625rem) {
   #header {
     .header {
-      .header__search {
+      &__search {
         display: none;
       }
     }
