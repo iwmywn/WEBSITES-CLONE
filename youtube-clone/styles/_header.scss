@@ -81,24 +81,51 @@
 
       &__bar {
         flex: 1;
-        width: 0;
-        height: 4rem;
-        outline: none;
-        border: 1px solid var(--searchbox-border);
-        border-radius: 999rem 0 0 999rem;
-        box-shadow: inset 0 1px 2px var(--searchbox-shadow);
-        padding: 0 0.4rem 0 1.6rem;
-        font-size: inherit;
-        font-family: inherit;
-        color: inherit;
+        display: flex;
+        position: relative;
 
-        &::placeholder {
-          color: var(--third-text);
+        > input {
+          flex: 1;
+          width: 0;
+          height: 4rem;
+          outline: none;
+          border: 1px solid var(--searchbox-border);
+          border-radius: 999rem 0 0 999rem;
+          box-shadow: inset 0 1px 2px var(--searchbox-shadow);
+          padding: 0 0.4rem 0 1.6rem;
+          font-size: inherit;
+          font-family: inherit;
+          font-weight: 400;
+          color: inherit;
+  
+          &::placeholder {
+            color: var(--third-text);
+          }
+  
+          &:focus {
+            border: 1px solid #1c62b9;
+            box-shadow: inset 0 1px 2px var(--black-alpha-30);
+          }
         }
 
-        &:focus {
-          border: 1px solid #1c62b9;
-          box-shadow: inset 0 1px 2px var(--black-alpha-30);
+        > svg {
+          position: absolute;
+          top: 25%;
+          left: 1.6rem;
+          z-index: 1;
+          opacity: 0;
+        }
+      }
+
+      &__bar.focus {
+        margin-left: -3.2rem;
+
+        > input {
+          padding-left: 4.8rem;
+        }
+
+        > svg {
+          opacity: 1;
         }
       }
 
