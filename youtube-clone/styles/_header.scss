@@ -57,7 +57,7 @@
 
     &__nav {
       column-gap: 1.6rem;
-      width: 25rem;
+      width: 21.8rem;
 
       &__hamberger-menu {
         @include iconBox;
@@ -77,34 +77,34 @@
 
     &__search {
       flex: 1;
-      max-width: 65rem;
+      max-width: 68.2rem;
 
       &__bar {
         flex: 1;
         display: flex;
+        align-items: center;
+        margin-left: 3.2rem;
         position: relative;
+        height: 4rem;
+        border: 1px solid var(--searchbox-border);
+        border-radius: 999rem 0 0 999rem;
+        box-shadow: inset 0 1px 2px var(--searchbox-shadow);
 
         > input {
           flex: 1;
           width: 0;
-          height: 4rem;
           outline: none;
-          border: 1px solid var(--searchbox-border);
-          border-radius: 999rem 0 0 999rem;
-          box-shadow: inset 0 1px 2px var(--searchbox-shadow);
-          padding: 0 0.4rem 0 1.6rem;
+          border: none;
+          padding-right: 0.4rem;
           font-size: inherit;
           font-family: inherit;
           font-weight: 400;
           color: inherit;
+          margin-left: 1.6rem;
+          line-height: 2.4rem;
   
           &::placeholder {
             color: var(--third-text);
-          }
-  
-          &:focus {
-            border: 1px solid #1c62b9;
-            box-shadow: inset 0 1px 2px var(--black-alpha-30);
           }
         }
 
@@ -118,10 +118,12 @@
       }
 
       &__bar.focus {
-        margin-left: -3.2rem;
+        margin-left: 0;
+        border: 1px solid #1c62b9;
+        box-shadow: inset 0 1px 2px var(--black-alpha-30);
 
         > input {
-          padding-left: 4.8rem;
+          margin-left: 4.8rem;
         }
 
         > svg {
@@ -146,22 +148,27 @@
         }
       }
 
+      &__responsive,
       &__voice {
         @include iconBox;
         cursor: pointer;
         margin-left: 1.6rem;
-        background-color: var(--search-voice);
+        background-color: var(--search-icon);
 
         &:hover {
-          background-color: var(--search-voice-hover);
+          background-color: var(--search-icon-hover);
         }
+      }
+
+      &__responsive {
+        display: none;
       }
     }
 
     &__account {
       justify-content: flex-end;
       column-gap: 1.6rem;
-      width: 25rem;
+      width: 21.8rem;
 
       &__create,
       &__notifications {

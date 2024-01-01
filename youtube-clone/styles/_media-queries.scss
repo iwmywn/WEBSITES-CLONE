@@ -76,12 +76,47 @@
   }
 }
 
-// 682px
-@media only screen and (max-width: 42.625rem) {
+// 655px
+@media only screen and (max-width: 40.9375rem) {
   #header {
+    padding-inline: 0.8rem;
+
     .header {
+      &__nav {
+        max-width: max-content;
+
+        &__hamberger-menu {
+          margin-right: 0.4rem;
+        }
+      }
+
       &__search {
-        display: none;
+        // direction: rtl;
+        justify-content: flex-end;
+
+        &__bar,
+        &__button {
+          display: none;
+        }
+
+        &__responsive,
+        &__voice {
+          margin-left: 0;
+          background-color: transparent;
+        }
+
+        &__responsive {
+          display: flex;
+        }
+      }
+
+      &__account {
+        column-gap: 0;
+        max-width: max-content;
+
+        &__profile {
+          margin-left: 1.6rem;
+        }
       }
     }
   }
